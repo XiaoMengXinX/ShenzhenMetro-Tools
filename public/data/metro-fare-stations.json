@@ -1,0 +1,3031 @@
+{
+  "schemaVersion": 1,
+  "stationCount": 432,
+  "idFormat": "<线路名称>:<线路内站编号>",
+  "stations": [
+    {
+      "index": 0,
+      "id": "1号线:1",
+      "lineName": "1号线",
+      "stationNumber": 1,
+      "name": "罗湖"
+    },
+    {
+      "index": 1,
+      "id": "1号线:2",
+      "lineName": "1号线",
+      "stationNumber": 2,
+      "name": "国贸"
+    },
+    {
+      "index": 2,
+      "id": "1号线:3",
+      "lineName": "1号线",
+      "stationNumber": 3,
+      "name": "老街"
+    },
+    {
+      "index": 3,
+      "id": "1号线:4",
+      "lineName": "1号线",
+      "stationNumber": 4,
+      "name": "大剧院"
+    },
+    {
+      "index": 4,
+      "id": "1号线:5",
+      "lineName": "1号线",
+      "stationNumber": 5,
+      "name": "科学馆"
+    },
+    {
+      "index": 5,
+      "id": "1号线:6",
+      "lineName": "1号线",
+      "stationNumber": 6,
+      "name": "华强路"
+    },
+    {
+      "index": 6,
+      "id": "1号线:7",
+      "lineName": "1号线",
+      "stationNumber": 7,
+      "name": "岗厦"
+    },
+    {
+      "index": 7,
+      "id": "1号线:8",
+      "lineName": "1号线",
+      "stationNumber": 8,
+      "name": "会展中心"
+    },
+    {
+      "index": 8,
+      "id": "1号线:9",
+      "lineName": "1号线",
+      "stationNumber": 9,
+      "name": "购物公园"
+    },
+    {
+      "index": 9,
+      "id": "1号线:10",
+      "lineName": "1号线",
+      "stationNumber": 10,
+      "name": "香蜜湖"
+    },
+    {
+      "index": 10,
+      "id": "1号线:11",
+      "lineName": "1号线",
+      "stationNumber": 11,
+      "name": "车公庙"
+    },
+    {
+      "index": 11,
+      "id": "1号线:12",
+      "lineName": "1号线",
+      "stationNumber": 12,
+      "name": "竹子林"
+    },
+    {
+      "index": 12,
+      "id": "1号线:13",
+      "lineName": "1号线",
+      "stationNumber": 13,
+      "name": "侨城东"
+    },
+    {
+      "index": 13,
+      "id": "1号线:14",
+      "lineName": "1号线",
+      "stationNumber": 14,
+      "name": "华侨城"
+    },
+    {
+      "index": 14,
+      "id": "1号线:15",
+      "lineName": "1号线",
+      "stationNumber": 15,
+      "name": "世界之窗"
+    },
+    {
+      "index": 15,
+      "id": "1号线:16",
+      "lineName": "1号线",
+      "stationNumber": 16,
+      "name": "白石洲"
+    },
+    {
+      "index": 16,
+      "id": "1号线:17",
+      "lineName": "1号线",
+      "stationNumber": 17,
+      "name": "高新园"
+    },
+    {
+      "index": 17,
+      "id": "1号线:18",
+      "lineName": "1号线",
+      "stationNumber": 18,
+      "name": "深大"
+    },
+    {
+      "index": 18,
+      "id": "1号线:19",
+      "lineName": "1号线",
+      "stationNumber": 19,
+      "name": "桃园"
+    },
+    {
+      "index": 19,
+      "id": "1号线:20",
+      "lineName": "1号线",
+      "stationNumber": 20,
+      "name": "大新"
+    },
+    {
+      "index": 20,
+      "id": "1号线:21",
+      "lineName": "1号线",
+      "stationNumber": 21,
+      "name": "鲤鱼门"
+    },
+    {
+      "index": 21,
+      "id": "1号线:22",
+      "lineName": "1号线",
+      "stationNumber": 22,
+      "name": "前海湾"
+    },
+    {
+      "index": 22,
+      "id": "1号线:23",
+      "lineName": "1号线",
+      "stationNumber": 23,
+      "name": "新安"
+    },
+    {
+      "index": 23,
+      "id": "1号线:24",
+      "lineName": "1号线",
+      "stationNumber": 24,
+      "name": "宝安中心"
+    },
+    {
+      "index": 24,
+      "id": "1号线:25",
+      "lineName": "1号线",
+      "stationNumber": 25,
+      "name": "宝体"
+    },
+    {
+      "index": 25,
+      "id": "1号线:26",
+      "lineName": "1号线",
+      "stationNumber": 26,
+      "name": "坪洲"
+    },
+    {
+      "index": 26,
+      "id": "1号线:27",
+      "lineName": "1号线",
+      "stationNumber": 27,
+      "name": "西乡"
+    },
+    {
+      "index": 27,
+      "id": "1号线:28",
+      "lineName": "1号线",
+      "stationNumber": 28,
+      "name": "固戍"
+    },
+    {
+      "index": 28,
+      "id": "1号线:29",
+      "lineName": "1号线",
+      "stationNumber": 29,
+      "name": "后瑞"
+    },
+    {
+      "index": 29,
+      "id": "1号线:30",
+      "lineName": "1号线",
+      "stationNumber": 30,
+      "name": "机场东"
+    },
+    {
+      "index": 30,
+      "id": "2号线:1",
+      "lineName": "2号线",
+      "stationNumber": 1,
+      "name": "赤湾"
+    },
+    {
+      "index": 31,
+      "id": "2号线:2",
+      "lineName": "2号线",
+      "stationNumber": 2,
+      "name": "蛇口港"
+    },
+    {
+      "index": 32,
+      "id": "2号线:3",
+      "lineName": "2号线",
+      "stationNumber": 3,
+      "name": "海上世界"
+    },
+    {
+      "index": 33,
+      "id": "2号线:4",
+      "lineName": "2号线",
+      "stationNumber": 4,
+      "name": "水湾"
+    },
+    {
+      "index": 34,
+      "id": "2号线:5",
+      "lineName": "2号线",
+      "stationNumber": 5,
+      "name": "东角头"
+    },
+    {
+      "index": 35,
+      "id": "2号线:6",
+      "lineName": "2号线",
+      "stationNumber": 6,
+      "name": "湾厦"
+    },
+    {
+      "index": 36,
+      "id": "2号线:7",
+      "lineName": "2号线",
+      "stationNumber": 7,
+      "name": "海月"
+    },
+    {
+      "index": 37,
+      "id": "2号线:8",
+      "lineName": "2号线",
+      "stationNumber": 8,
+      "name": "登良"
+    },
+    {
+      "index": 38,
+      "id": "2号线:9",
+      "lineName": "2号线",
+      "stationNumber": 9,
+      "name": "后海"
+    },
+    {
+      "index": 39,
+      "id": "2号线:10",
+      "lineName": "2号线",
+      "stationNumber": 10,
+      "name": "科苑"
+    },
+    {
+      "index": 40,
+      "id": "2号线:11",
+      "lineName": "2号线",
+      "stationNumber": 11,
+      "name": "红树湾"
+    },
+    {
+      "index": 41,
+      "id": "2号线:12",
+      "lineName": "2号线",
+      "stationNumber": 12,
+      "name": "世界之窗"
+    },
+    {
+      "index": 42,
+      "id": "2号线:13",
+      "lineName": "2号线",
+      "stationNumber": 13,
+      "name": "侨城北"
+    },
+    {
+      "index": 43,
+      "id": "2号线:14",
+      "lineName": "2号线",
+      "stationNumber": 14,
+      "name": "深康"
+    },
+    {
+      "index": 44,
+      "id": "2号线:15",
+      "lineName": "2号线",
+      "stationNumber": 15,
+      "name": "安托山"
+    },
+    {
+      "index": 45,
+      "id": "2号线:16",
+      "lineName": "2号线",
+      "stationNumber": 16,
+      "name": "侨香"
+    },
+    {
+      "index": 46,
+      "id": "2号线:17",
+      "lineName": "2号线",
+      "stationNumber": 17,
+      "name": "香蜜"
+    },
+    {
+      "index": 47,
+      "id": "2号线:18",
+      "lineName": "2号线",
+      "stationNumber": 18,
+      "name": "香梅北"
+    },
+    {
+      "index": 48,
+      "id": "2号线:19",
+      "lineName": "2号线",
+      "stationNumber": 19,
+      "name": "景田"
+    },
+    {
+      "index": 49,
+      "id": "2号线:20",
+      "lineName": "2号线",
+      "stationNumber": 20,
+      "name": "莲花西"
+    },
+    {
+      "index": 50,
+      "id": "2号线:21",
+      "lineName": "2号线",
+      "stationNumber": 21,
+      "name": "福田"
+    },
+    {
+      "index": 51,
+      "id": "2号线:22",
+      "lineName": "2号线",
+      "stationNumber": 22,
+      "name": "市民中心"
+    },
+    {
+      "index": 52,
+      "id": "2号线:23",
+      "lineName": "2号线",
+      "stationNumber": 23,
+      "name": "岗厦北"
+    },
+    {
+      "index": 53,
+      "id": "2号线:24",
+      "lineName": "2号线",
+      "stationNumber": 24,
+      "name": "华强北"
+    },
+    {
+      "index": 54,
+      "id": "2号线:25",
+      "lineName": "2号线",
+      "stationNumber": 25,
+      "name": "燕南"
+    },
+    {
+      "index": 55,
+      "id": "2号线:26",
+      "lineName": "2号线",
+      "stationNumber": 26,
+      "name": "大剧院"
+    },
+    {
+      "index": 56,
+      "id": "2号线:27",
+      "lineName": "2号线",
+      "stationNumber": 27,
+      "name": "湖贝"
+    },
+    {
+      "index": 57,
+      "id": "2号线:28",
+      "lineName": "2号线",
+      "stationNumber": 28,
+      "name": "黄贝岭"
+    },
+    {
+      "index": 58,
+      "id": "2号线:29",
+      "lineName": "2号线",
+      "stationNumber": 29,
+      "name": "新秀"
+    },
+    {
+      "index": 59,
+      "id": "2号线:30",
+      "lineName": "2号线",
+      "stationNumber": 30,
+      "name": "莲塘口岸"
+    },
+    {
+      "index": 60,
+      "id": "2号线:31",
+      "lineName": "2号线",
+      "stationNumber": 31,
+      "name": "仙湖路"
+    },
+    {
+      "index": 61,
+      "id": "2号线:32",
+      "lineName": "2号线",
+      "stationNumber": 32,
+      "name": "莲塘"
+    },
+    {
+      "index": 62,
+      "id": "8号线:1",
+      "lineName": "8号线",
+      "stationNumber": 1,
+      "name": "梧桐山南"
+    },
+    {
+      "index": 63,
+      "id": "8号线:2",
+      "lineName": "8号线",
+      "stationNumber": 2,
+      "name": "沙头角"
+    },
+    {
+      "index": 64,
+      "id": "8号线:3",
+      "lineName": "8号线",
+      "stationNumber": 3,
+      "name": "海山"
+    },
+    {
+      "index": 65,
+      "id": "8号线:4",
+      "lineName": "8号线",
+      "stationNumber": 4,
+      "name": "盐田港西"
+    },
+    {
+      "index": 66,
+      "id": "8号线:5",
+      "lineName": "8号线",
+      "stationNumber": 5,
+      "name": "深外高中"
+    },
+    {
+      "index": 67,
+      "id": "8号线:6",
+      "lineName": "8号线",
+      "stationNumber": 6,
+      "name": "盐田路"
+    },
+    {
+      "index": 68,
+      "id": "8号线:7",
+      "lineName": "8号线",
+      "stationNumber": 7,
+      "name": "鸿安围"
+    },
+    {
+      "index": 69,
+      "id": "8号线:8",
+      "lineName": "8号线",
+      "stationNumber": 8,
+      "name": "盐田墟"
+    },
+    {
+      "index": 70,
+      "id": "8号线:9",
+      "lineName": "8号线",
+      "stationNumber": 9,
+      "name": "大梅沙"
+    },
+    {
+      "index": 71,
+      "id": "8号线:10",
+      "lineName": "8号线",
+      "stationNumber": 10,
+      "name": "小梅沙"
+    },
+    {
+      "index": 72,
+      "id": "8号线:11",
+      "lineName": "8号线",
+      "stationNumber": 11,
+      "name": "溪涌"
+    },
+    {
+      "index": 73,
+      "id": "3号线:1",
+      "lineName": "3号线",
+      "stationNumber": 1,
+      "name": "福保"
+    },
+    {
+      "index": 74,
+      "id": "3号线:2",
+      "lineName": "3号线",
+      "stationNumber": 2,
+      "name": "益田"
+    },
+    {
+      "index": 75,
+      "id": "3号线:3",
+      "lineName": "3号线",
+      "stationNumber": 3,
+      "name": "石厦"
+    },
+    {
+      "index": 76,
+      "id": "3号线:4",
+      "lineName": "3号线",
+      "stationNumber": 4,
+      "name": "购物公园"
+    },
+    {
+      "index": 77,
+      "id": "3号线:5",
+      "lineName": "3号线",
+      "stationNumber": 5,
+      "name": "福田"
+    },
+    {
+      "index": 78,
+      "id": "3号线:6",
+      "lineName": "3号线",
+      "stationNumber": 6,
+      "name": "少年宫"
+    },
+    {
+      "index": 79,
+      "id": "3号线:7",
+      "lineName": "3号线",
+      "stationNumber": 7,
+      "name": "莲花村"
+    },
+    {
+      "index": 80,
+      "id": "3号线:8",
+      "lineName": "3号线",
+      "stationNumber": 8,
+      "name": "华新"
+    },
+    {
+      "index": 81,
+      "id": "3号线:9",
+      "lineName": "3号线",
+      "stationNumber": 9,
+      "name": "通新岭"
+    },
+    {
+      "index": 82,
+      "id": "3号线:10",
+      "lineName": "3号线",
+      "stationNumber": 10,
+      "name": "红岭"
+    },
+    {
+      "index": 83,
+      "id": "3号线:11",
+      "lineName": "3号线",
+      "stationNumber": 11,
+      "name": "老街"
+    },
+    {
+      "index": 84,
+      "id": "3号线:12",
+      "lineName": "3号线",
+      "stationNumber": 12,
+      "name": "晒布"
+    },
+    {
+      "index": 85,
+      "id": "3号线:13",
+      "lineName": "3号线",
+      "stationNumber": 13,
+      "name": "翠竹"
+    },
+    {
+      "index": 86,
+      "id": "3号线:14",
+      "lineName": "3号线",
+      "stationNumber": 14,
+      "name": "田贝"
+    },
+    {
+      "index": 87,
+      "id": "3号线:15",
+      "lineName": "3号线",
+      "stationNumber": 15,
+      "name": "水贝"
+    },
+    {
+      "index": 88,
+      "id": "3号线:16",
+      "lineName": "3号线",
+      "stationNumber": 16,
+      "name": "草埔"
+    },
+    {
+      "index": 89,
+      "id": "3号线:17",
+      "lineName": "3号线",
+      "stationNumber": 17,
+      "name": "布吉"
+    },
+    {
+      "index": 90,
+      "id": "3号线:18",
+      "lineName": "3号线",
+      "stationNumber": 18,
+      "name": "木棉湾"
+    },
+    {
+      "index": 91,
+      "id": "3号线:19",
+      "lineName": "3号线",
+      "stationNumber": 19,
+      "name": "大芬"
+    },
+    {
+      "index": 92,
+      "id": "3号线:20",
+      "lineName": "3号线",
+      "stationNumber": 20,
+      "name": "丹竹头"
+    },
+    {
+      "index": 93,
+      "id": "3号线:21",
+      "lineName": "3号线",
+      "stationNumber": 21,
+      "name": "六约"
+    },
+    {
+      "index": 94,
+      "id": "3号线:22",
+      "lineName": "3号线",
+      "stationNumber": 22,
+      "name": "塘坑"
+    },
+    {
+      "index": 95,
+      "id": "3号线:23",
+      "lineName": "3号线",
+      "stationNumber": 23,
+      "name": "横岗"
+    },
+    {
+      "index": 96,
+      "id": "3号线:24",
+      "lineName": "3号线",
+      "stationNumber": 24,
+      "name": "永湖"
+    },
+    {
+      "index": 97,
+      "id": "3号线:25",
+      "lineName": "3号线",
+      "stationNumber": 25,
+      "name": "荷坳"
+    },
+    {
+      "index": 98,
+      "id": "3号线:26",
+      "lineName": "3号线",
+      "stationNumber": 26,
+      "name": "大运"
+    },
+    {
+      "index": 99,
+      "id": "3号线:27",
+      "lineName": "3号线",
+      "stationNumber": 27,
+      "name": "爱联"
+    },
+    {
+      "index": 100,
+      "id": "3号线:28",
+      "lineName": "3号线",
+      "stationNumber": 28,
+      "name": "吉祥"
+    },
+    {
+      "index": 101,
+      "id": "3号线:29",
+      "lineName": "3号线",
+      "stationNumber": 29,
+      "name": "龙城广场"
+    },
+    {
+      "index": 102,
+      "id": "3号线:30",
+      "lineName": "3号线",
+      "stationNumber": 30,
+      "name": "南联"
+    },
+    {
+      "index": 103,
+      "id": "3号线:31",
+      "lineName": "3号线",
+      "stationNumber": 31,
+      "name": "双龙"
+    },
+    {
+      "index": 104,
+      "id": "3号线:32",
+      "lineName": "3号线",
+      "stationNumber": 32,
+      "name": "梨园"
+    },
+    {
+      "index": 105,
+      "id": "3号线:33",
+      "lineName": "3号线",
+      "stationNumber": 33,
+      "name": "新生"
+    },
+    {
+      "index": 106,
+      "id": "3号线:34",
+      "lineName": "3号线",
+      "stationNumber": 34,
+      "name": "坪西"
+    },
+    {
+      "index": 107,
+      "id": "3号线:35",
+      "lineName": "3号线",
+      "stationNumber": 35,
+      "name": "低碳城"
+    },
+    {
+      "index": 108,
+      "id": "3号线:36",
+      "lineName": "3号线",
+      "stationNumber": 36,
+      "name": "白石塘"
+    },
+    {
+      "index": 109,
+      "id": "3号线:37",
+      "lineName": "3号线",
+      "stationNumber": 37,
+      "name": "富坪"
+    },
+    {
+      "index": 110,
+      "id": "3号线:38",
+      "lineName": "3号线",
+      "stationNumber": 38,
+      "name": "坪地六联"
+    },
+    {
+      "index": 111,
+      "id": "4号线:1",
+      "lineName": "4号线",
+      "stationNumber": 1,
+      "name": "福田口岸"
+    },
+    {
+      "index": 112,
+      "id": "4号线:2",
+      "lineName": "4号线",
+      "stationNumber": 2,
+      "name": "福民"
+    },
+    {
+      "index": 113,
+      "id": "4号线:3",
+      "lineName": "4号线",
+      "stationNumber": 3,
+      "name": "会展中心"
+    },
+    {
+      "index": 114,
+      "id": "4号线:4",
+      "lineName": "4号线",
+      "stationNumber": 4,
+      "name": "市民中心"
+    },
+    {
+      "index": 115,
+      "id": "4号线:5",
+      "lineName": "4号线",
+      "stationNumber": 5,
+      "name": "少年宫"
+    },
+    {
+      "index": 116,
+      "id": "4号线:6",
+      "lineName": "4号线",
+      "stationNumber": 6,
+      "name": "莲花北"
+    },
+    {
+      "index": 117,
+      "id": "4号线:7",
+      "lineName": "4号线",
+      "stationNumber": 7,
+      "name": "上梅林"
+    },
+    {
+      "index": 118,
+      "id": "4号线:8",
+      "lineName": "4号线",
+      "stationNumber": 8,
+      "name": "民乐"
+    },
+    {
+      "index": 119,
+      "id": "4号线:9",
+      "lineName": "4号线",
+      "stationNumber": 9,
+      "name": "白石龙"
+    },
+    {
+      "index": 120,
+      "id": "4号线:10",
+      "lineName": "4号线",
+      "stationNumber": 10,
+      "name": "深圳北站"
+    },
+    {
+      "index": 121,
+      "id": "4号线:11",
+      "lineName": "4号线",
+      "stationNumber": 11,
+      "name": "红山"
+    },
+    {
+      "index": 122,
+      "id": "4号线:12",
+      "lineName": "4号线",
+      "stationNumber": 12,
+      "name": "上塘"
+    },
+    {
+      "index": 123,
+      "id": "4号线:13",
+      "lineName": "4号线",
+      "stationNumber": 13,
+      "name": "龙胜"
+    },
+    {
+      "index": 124,
+      "id": "4号线:14",
+      "lineName": "4号线",
+      "stationNumber": 14,
+      "name": "龙华"
+    },
+    {
+      "index": 125,
+      "id": "4号线:15",
+      "lineName": "4号线",
+      "stationNumber": 15,
+      "name": "清湖"
+    },
+    {
+      "index": 126,
+      "id": "4号线:16",
+      "lineName": "4号线",
+      "stationNumber": 16,
+      "name": "清湖北"
+    },
+    {
+      "index": 127,
+      "id": "4号线:17",
+      "lineName": "4号线",
+      "stationNumber": 17,
+      "name": "竹村"
+    },
+    {
+      "index": 128,
+      "id": "4号线:18",
+      "lineName": "4号线",
+      "stationNumber": 18,
+      "name": "茜坑"
+    },
+    {
+      "index": 129,
+      "id": "4号线:19",
+      "lineName": "4号线",
+      "stationNumber": 19,
+      "name": "长湖"
+    },
+    {
+      "index": 130,
+      "id": "4号线:20",
+      "lineName": "4号线",
+      "stationNumber": 20,
+      "name": "观澜"
+    },
+    {
+      "index": 131,
+      "id": "4号线:21",
+      "lineName": "4号线",
+      "stationNumber": 21,
+      "name": "松元厦"
+    },
+    {
+      "index": 132,
+      "id": "4号线:22",
+      "lineName": "4号线",
+      "stationNumber": 22,
+      "name": "观澜湖"
+    },
+    {
+      "index": 133,
+      "id": "4号线:23",
+      "lineName": "4号线",
+      "stationNumber": 23,
+      "name": "牛湖"
+    },
+    {
+      "index": 134,
+      "id": "5号线:1",
+      "lineName": "5号线",
+      "stationNumber": 1,
+      "name": "赤湾"
+    },
+    {
+      "index": 135,
+      "id": "5号线:2",
+      "lineName": "5号线",
+      "stationNumber": 2,
+      "name": "荔湾"
+    },
+    {
+      "index": 136,
+      "id": "5号线:3",
+      "lineName": "5号线",
+      "stationNumber": 3,
+      "name": "铁路公园"
+    },
+    {
+      "index": 137,
+      "id": "5号线:4",
+      "lineName": "5号线",
+      "stationNumber": 4,
+      "name": "妈湾"
+    },
+    {
+      "index": 138,
+      "id": "5号线:5",
+      "lineName": "5号线",
+      "stationNumber": 5,
+      "name": "前湾公园"
+    },
+    {
+      "index": 139,
+      "id": "5号线:6",
+      "lineName": "5号线",
+      "stationNumber": 6,
+      "name": "前湾"
+    },
+    {
+      "index": 140,
+      "id": "5号线:7",
+      "lineName": "5号线",
+      "stationNumber": 7,
+      "name": "桂湾"
+    },
+    {
+      "index": 141,
+      "id": "5号线:8",
+      "lineName": "5号线",
+      "stationNumber": 8,
+      "name": "前海湾"
+    },
+    {
+      "index": 142,
+      "id": "5号线:9",
+      "lineName": "5号线",
+      "stationNumber": 9,
+      "name": "临海"
+    },
+    {
+      "index": 143,
+      "id": "5号线:10",
+      "lineName": "5号线",
+      "stationNumber": 10,
+      "name": "宝华"
+    },
+    {
+      "index": 144,
+      "id": "5号线:11",
+      "lineName": "5号线",
+      "stationNumber": 11,
+      "name": "宝安中心"
+    },
+    {
+      "index": 145,
+      "id": "5号线:12",
+      "lineName": "5号线",
+      "stationNumber": 12,
+      "name": "翻身"
+    },
+    {
+      "index": 146,
+      "id": "5号线:13",
+      "lineName": "5号线",
+      "stationNumber": 13,
+      "name": "灵芝"
+    },
+    {
+      "index": 147,
+      "id": "5号线:14",
+      "lineName": "5号线",
+      "stationNumber": 14,
+      "name": "洪浪北"
+    },
+    {
+      "index": 148,
+      "id": "5号线:15",
+      "lineName": "5号线",
+      "stationNumber": 15,
+      "name": "兴东"
+    },
+    {
+      "index": 149,
+      "id": "5号线:16",
+      "lineName": "5号线",
+      "stationNumber": 16,
+      "name": "留仙洞"
+    },
+    {
+      "index": 150,
+      "id": "5号线:17",
+      "lineName": "5号线",
+      "stationNumber": 17,
+      "name": "西丽"
+    },
+    {
+      "index": 151,
+      "id": "5号线:18",
+      "lineName": "5号线",
+      "stationNumber": 18,
+      "name": "大学城"
+    },
+    {
+      "index": 152,
+      "id": "5号线:19",
+      "lineName": "5号线",
+      "stationNumber": 19,
+      "name": "塘朗"
+    },
+    {
+      "index": 153,
+      "id": "5号线:20",
+      "lineName": "5号线",
+      "stationNumber": 20,
+      "name": "长岭陂"
+    },
+    {
+      "index": 154,
+      "id": "5号线:21",
+      "lineName": "5号线",
+      "stationNumber": 21,
+      "name": "深圳北站"
+    },
+    {
+      "index": 155,
+      "id": "5号线:22",
+      "lineName": "5号线",
+      "stationNumber": 22,
+      "name": "民治"
+    },
+    {
+      "index": 156,
+      "id": "5号线:23",
+      "lineName": "5号线",
+      "stationNumber": 23,
+      "name": "五和"
+    },
+    {
+      "index": 157,
+      "id": "5号线:24",
+      "lineName": "5号线",
+      "stationNumber": 24,
+      "name": "坂田"
+    },
+    {
+      "index": 158,
+      "id": "5号线:25",
+      "lineName": "5号线",
+      "stationNumber": 25,
+      "name": "杨美"
+    },
+    {
+      "index": 159,
+      "id": "5号线:26",
+      "lineName": "5号线",
+      "stationNumber": 26,
+      "name": "上水径"
+    },
+    {
+      "index": 160,
+      "id": "5号线:27",
+      "lineName": "5号线",
+      "stationNumber": 27,
+      "name": "下水径"
+    },
+    {
+      "index": 161,
+      "id": "5号线:28",
+      "lineName": "5号线",
+      "stationNumber": 28,
+      "name": "长龙"
+    },
+    {
+      "index": 162,
+      "id": "5号线:29",
+      "lineName": "5号线",
+      "stationNumber": 29,
+      "name": "布吉"
+    },
+    {
+      "index": 163,
+      "id": "5号线:30",
+      "lineName": "5号线",
+      "stationNumber": 30,
+      "name": "百鸽笼"
+    },
+    {
+      "index": 164,
+      "id": "5号线:31",
+      "lineName": "5号线",
+      "stationNumber": 31,
+      "name": "布心"
+    },
+    {
+      "index": 165,
+      "id": "5号线:32",
+      "lineName": "5号线",
+      "stationNumber": 32,
+      "name": "太安"
+    },
+    {
+      "index": 166,
+      "id": "5号线:33",
+      "lineName": "5号线",
+      "stationNumber": 33,
+      "name": "怡景"
+    },
+    {
+      "index": 167,
+      "id": "5号线:34",
+      "lineName": "5号线",
+      "stationNumber": 34,
+      "name": "黄贝岭"
+    },
+    {
+      "index": 168,
+      "id": "5号线:35",
+      "lineName": "5号线",
+      "stationNumber": 35,
+      "name": "湖贝"
+    },
+    {
+      "index": 169,
+      "id": "5号线:36",
+      "lineName": "5号线",
+      "stationNumber": 36,
+      "name": "东门"
+    },
+    {
+      "index": 170,
+      "id": "5号线:37",
+      "lineName": "5号线",
+      "stationNumber": 37,
+      "name": "大剧院"
+    },
+    {
+      "index": 171,
+      "id": "6号线:1",
+      "lineName": "6号线",
+      "stationNumber": 1,
+      "name": "科学馆"
+    },
+    {
+      "index": 172,
+      "id": "6号线:2",
+      "lineName": "6号线",
+      "stationNumber": 2,
+      "name": "通新岭"
+    },
+    {
+      "index": 173,
+      "id": "6号线:3",
+      "lineName": "6号线",
+      "stationNumber": 3,
+      "name": "体育中心"
+    },
+    {
+      "index": 174,
+      "id": "6号线:4",
+      "lineName": "6号线",
+      "stationNumber": 4,
+      "name": "八卦岭"
+    },
+    {
+      "index": 175,
+      "id": "6号线:5",
+      "lineName": "6号线",
+      "stationNumber": 5,
+      "name": "银湖"
+    },
+    {
+      "index": 176,
+      "id": "6号线:6",
+      "lineName": "6号线",
+      "stationNumber": 6,
+      "name": "翰岭"
+    },
+    {
+      "index": 177,
+      "id": "6号线:7",
+      "lineName": "6号线",
+      "stationNumber": 7,
+      "name": "梅林关"
+    },
+    {
+      "index": 178,
+      "id": "6号线:8",
+      "lineName": "6号线",
+      "stationNumber": 8,
+      "name": "深圳北站"
+    },
+    {
+      "index": 179,
+      "id": "6号线:9",
+      "lineName": "6号线",
+      "stationNumber": 9,
+      "name": "红山"
+    },
+    {
+      "index": 180,
+      "id": "6号线:10",
+      "lineName": "6号线",
+      "stationNumber": 10,
+      "name": "上芬"
+    },
+    {
+      "index": 181,
+      "id": "6号线:11",
+      "lineName": "6号线",
+      "stationNumber": 11,
+      "name": "元芬"
+    },
+    {
+      "index": 182,
+      "id": "6号线:12",
+      "lineName": "6号线",
+      "stationNumber": 12,
+      "name": "阳台山东"
+    },
+    {
+      "index": 183,
+      "id": "6号线:13",
+      "lineName": "6号线",
+      "stationNumber": 13,
+      "name": "官田"
+    },
+    {
+      "index": 184,
+      "id": "6号线:14",
+      "lineName": "6号线",
+      "stationNumber": 14,
+      "name": "上屋"
+    },
+    {
+      "index": 185,
+      "id": "6号线:15",
+      "lineName": "6号线",
+      "stationNumber": 15,
+      "name": "长圳"
+    },
+    {
+      "index": 186,
+      "id": "6号线:16",
+      "lineName": "6号线",
+      "stationNumber": 16,
+      "name": "凤凰城"
+    },
+    {
+      "index": 187,
+      "id": "6号线:17",
+      "lineName": "6号线",
+      "stationNumber": 17,
+      "name": "光明大街"
+    },
+    {
+      "index": 188,
+      "id": "6号线:18",
+      "lineName": "6号线",
+      "stationNumber": 18,
+      "name": "光明"
+    },
+    {
+      "index": 189,
+      "id": "6号线:19",
+      "lineName": "6号线",
+      "stationNumber": 19,
+      "name": "科学公园"
+    },
+    {
+      "index": 190,
+      "id": "6号线:20",
+      "lineName": "6号线",
+      "stationNumber": 20,
+      "name": "楼村"
+    },
+    {
+      "index": 191,
+      "id": "6号线:21",
+      "lineName": "6号线",
+      "stationNumber": 21,
+      "name": "红花山"
+    },
+    {
+      "index": 192,
+      "id": "6号线:22",
+      "lineName": "6号线",
+      "stationNumber": 22,
+      "name": "公明广场"
+    },
+    {
+      "index": 193,
+      "id": "6号线:23",
+      "lineName": "6号线",
+      "stationNumber": 23,
+      "name": "合水口"
+    },
+    {
+      "index": 194,
+      "id": "6号线:24",
+      "lineName": "6号线",
+      "stationNumber": 24,
+      "name": "薯田埔"
+    },
+    {
+      "index": 195,
+      "id": "6号线:25",
+      "lineName": "6号线",
+      "stationNumber": 25,
+      "name": "松岗公园"
+    },
+    {
+      "index": 196,
+      "id": "6号线:26",
+      "lineName": "6号线",
+      "stationNumber": 26,
+      "name": "溪头"
+    },
+    {
+      "index": 197,
+      "id": "6号线:27",
+      "lineName": "6号线",
+      "stationNumber": 27,
+      "name": "松岗"
+    },
+    {
+      "index": 198,
+      "id": "6支号线:1",
+      "lineName": "6支号线",
+      "stationNumber": 1,
+      "name": "光明城"
+    },
+    {
+      "index": 199,
+      "id": "6支号线:2",
+      "lineName": "6支号线",
+      "stationNumber": 2,
+      "name": "虹桥公园"
+    },
+    {
+      "index": 200,
+      "id": "6支号线:3",
+      "lineName": "6支号线",
+      "stationNumber": 3,
+      "name": "碧眼"
+    },
+    {
+      "index": 201,
+      "id": "6支号线:4",
+      "lineName": "6支号线",
+      "stationNumber": 4,
+      "name": "光明"
+    },
+    {
+      "index": 202,
+      "id": "6支号线:5",
+      "lineName": "6支号线",
+      "stationNumber": 5,
+      "name": "圳美"
+    },
+    {
+      "index": 203,
+      "id": "6支号线:6",
+      "lineName": "6支号线",
+      "stationNumber": 6,
+      "name": "中大"
+    },
+    {
+      "index": 204,
+      "id": "6支号线:7",
+      "lineName": "6支号线",
+      "stationNumber": 7,
+      "name": "深理工"
+    },
+    {
+      "index": 205,
+      "id": "7号线:1",
+      "lineName": "7号线",
+      "stationNumber": 1,
+      "name": "深大丽湖"
+    },
+    {
+      "index": 206,
+      "id": "7号线:2",
+      "lineName": "7号线",
+      "stationNumber": 2,
+      "name": "北大"
+    },
+    {
+      "index": 207,
+      "id": "7号线:3",
+      "lineName": "7号线",
+      "stationNumber": 3,
+      "name": "西丽湖"
+    },
+    {
+      "index": 208,
+      "id": "7号线:4",
+      "lineName": "7号线",
+      "stationNumber": 4,
+      "name": "西丽"
+    },
+    {
+      "index": 209,
+      "id": "7号线:5",
+      "lineName": "7号线",
+      "stationNumber": 5,
+      "name": "茶光"
+    },
+    {
+      "index": 210,
+      "id": "7号线:6",
+      "lineName": "7号线",
+      "stationNumber": 6,
+      "name": "珠光"
+    },
+    {
+      "index": 211,
+      "id": "7号线:7",
+      "lineName": "7号线",
+      "stationNumber": 7,
+      "name": "龙井"
+    },
+    {
+      "index": 212,
+      "id": "7号线:8",
+      "lineName": "7号线",
+      "stationNumber": 8,
+      "name": "桃源村"
+    },
+    {
+      "index": 213,
+      "id": "7号线:9",
+      "lineName": "7号线",
+      "stationNumber": 9,
+      "name": "深云"
+    },
+    {
+      "index": 214,
+      "id": "7号线:10",
+      "lineName": "7号线",
+      "stationNumber": 10,
+      "name": "安托山"
+    },
+    {
+      "index": 215,
+      "id": "7号线:11",
+      "lineName": "7号线",
+      "stationNumber": 11,
+      "name": "农林"
+    },
+    {
+      "index": 216,
+      "id": "7号线:12",
+      "lineName": "7号线",
+      "stationNumber": 12,
+      "name": "车公庙"
+    },
+    {
+      "index": 217,
+      "id": "7号线:13",
+      "lineName": "7号线",
+      "stationNumber": 13,
+      "name": "上沙"
+    },
+    {
+      "index": 218,
+      "id": "7号线:14",
+      "lineName": "7号线",
+      "stationNumber": 14,
+      "name": "沙尾"
+    },
+    {
+      "index": 219,
+      "id": "7号线:15",
+      "lineName": "7号线",
+      "stationNumber": 15,
+      "name": "石厦"
+    },
+    {
+      "index": 220,
+      "id": "7号线:16",
+      "lineName": "7号线",
+      "stationNumber": 16,
+      "name": "皇岗村"
+    },
+    {
+      "index": 221,
+      "id": "7号线:17",
+      "lineName": "7号线",
+      "stationNumber": 17,
+      "name": "福民"
+    },
+    {
+      "index": 222,
+      "id": "7号线:18",
+      "lineName": "7号线",
+      "stationNumber": 18,
+      "name": "皇岗口岸"
+    },
+    {
+      "index": 223,
+      "id": "7号线:19",
+      "lineName": "7号线",
+      "stationNumber": 19,
+      "name": "赤尾"
+    },
+    {
+      "index": 224,
+      "id": "7号线:20",
+      "lineName": "7号线",
+      "stationNumber": 20,
+      "name": "华强南"
+    },
+    {
+      "index": 225,
+      "id": "7号线:21",
+      "lineName": "7号线",
+      "stationNumber": 21,
+      "name": "华强北"
+    },
+    {
+      "index": 226,
+      "id": "7号线:22",
+      "lineName": "7号线",
+      "stationNumber": 22,
+      "name": "华新"
+    },
+    {
+      "index": 227,
+      "id": "7号线:23",
+      "lineName": "7号线",
+      "stationNumber": 23,
+      "name": "黄木岗"
+    },
+    {
+      "index": 228,
+      "id": "7号线:24",
+      "lineName": "7号线",
+      "stationNumber": 24,
+      "name": "八卦岭"
+    },
+    {
+      "index": 229,
+      "id": "7号线:25",
+      "lineName": "7号线",
+      "stationNumber": 25,
+      "name": "红岭北"
+    },
+    {
+      "index": 230,
+      "id": "7号线:26",
+      "lineName": "7号线",
+      "stationNumber": 26,
+      "name": "笋岗"
+    },
+    {
+      "index": 231,
+      "id": "7号线:27",
+      "lineName": "7号线",
+      "stationNumber": 27,
+      "name": "洪湖"
+    },
+    {
+      "index": 232,
+      "id": "7号线:28",
+      "lineName": "7号线",
+      "stationNumber": 28,
+      "name": "田贝"
+    },
+    {
+      "index": 233,
+      "id": "7号线:29",
+      "lineName": "7号线",
+      "stationNumber": 29,
+      "name": "太安"
+    },
+    {
+      "index": 234,
+      "id": "9号线:1",
+      "lineName": "9号线",
+      "stationNumber": 1,
+      "name": "前湾"
+    },
+    {
+      "index": 235,
+      "id": "9号线:2",
+      "lineName": "9号线",
+      "stationNumber": 2,
+      "name": "梦海"
+    },
+    {
+      "index": 236,
+      "id": "9号线:3",
+      "lineName": "9号线",
+      "stationNumber": 3,
+      "name": "怡海"
+    },
+    {
+      "index": 237,
+      "id": "9号线:4",
+      "lineName": "9号线",
+      "stationNumber": 4,
+      "name": "荔林"
+    },
+    {
+      "index": 238,
+      "id": "9号线:5",
+      "lineName": "9号线",
+      "stationNumber": 5,
+      "name": "南油西"
+    },
+    {
+      "index": 239,
+      "id": "9号线:6",
+      "lineName": "9号线",
+      "stationNumber": 6,
+      "name": "南油"
+    },
+    {
+      "index": 240,
+      "id": "9号线:7",
+      "lineName": "9号线",
+      "stationNumber": 7,
+      "name": "南山书城"
+    },
+    {
+      "index": 241,
+      "id": "9号线:8",
+      "lineName": "9号线",
+      "stationNumber": 8,
+      "name": "深大南"
+    },
+    {
+      "index": 242,
+      "id": "9号线:9",
+      "lineName": "9号线",
+      "stationNumber": 9,
+      "name": "粤海门"
+    },
+    {
+      "index": 243,
+      "id": "9号线:10",
+      "lineName": "9号线",
+      "stationNumber": 10,
+      "name": "高新南"
+    },
+    {
+      "index": 244,
+      "id": "9号线:11",
+      "lineName": "9号线",
+      "stationNumber": 11,
+      "name": "红树湾南"
+    },
+    {
+      "index": 245,
+      "id": "9号线:12",
+      "lineName": "9号线",
+      "stationNumber": 12,
+      "name": "深湾"
+    },
+    {
+      "index": 246,
+      "id": "9号线:13",
+      "lineName": "9号线",
+      "stationNumber": 13,
+      "name": "深圳湾公园"
+    },
+    {
+      "index": 247,
+      "id": "9号线:14",
+      "lineName": "9号线",
+      "stationNumber": 14,
+      "name": "下沙"
+    },
+    {
+      "index": 248,
+      "id": "9号线:15",
+      "lineName": "9号线",
+      "stationNumber": 15,
+      "name": "车公庙"
+    },
+    {
+      "index": 249,
+      "id": "9号线:16",
+      "lineName": "9号线",
+      "stationNumber": 16,
+      "name": "香梅"
+    },
+    {
+      "index": 250,
+      "id": "9号线:17",
+      "lineName": "9号线",
+      "stationNumber": 17,
+      "name": "景田"
+    },
+    {
+      "index": 251,
+      "id": "9号线:18",
+      "lineName": "9号线",
+      "stationNumber": 18,
+      "name": "梅景"
+    },
+    {
+      "index": 252,
+      "id": "9号线:19",
+      "lineName": "9号线",
+      "stationNumber": 19,
+      "name": "下梅林"
+    },
+    {
+      "index": 253,
+      "id": "9号线:20",
+      "lineName": "9号线",
+      "stationNumber": 20,
+      "name": "梅村"
+    },
+    {
+      "index": 254,
+      "id": "9号线:21",
+      "lineName": "9号线",
+      "stationNumber": 21,
+      "name": "上梅林"
+    },
+    {
+      "index": 255,
+      "id": "9号线:22",
+      "lineName": "9号线",
+      "stationNumber": 22,
+      "name": "孖岭"
+    },
+    {
+      "index": 256,
+      "id": "9号线:23",
+      "lineName": "9号线",
+      "stationNumber": 23,
+      "name": "银湖"
+    },
+    {
+      "index": 257,
+      "id": "9号线:24",
+      "lineName": "9号线",
+      "stationNumber": 24,
+      "name": "泥岗"
+    },
+    {
+      "index": 258,
+      "id": "9号线:25",
+      "lineName": "9号线",
+      "stationNumber": 25,
+      "name": "红岭北"
+    },
+    {
+      "index": 259,
+      "id": "9号线:26",
+      "lineName": "9号线",
+      "stationNumber": 26,
+      "name": "园岭"
+    },
+    {
+      "index": 260,
+      "id": "9号线:27",
+      "lineName": "9号线",
+      "stationNumber": 27,
+      "name": "红岭"
+    },
+    {
+      "index": 261,
+      "id": "9号线:28",
+      "lineName": "9号线",
+      "stationNumber": 28,
+      "name": "红岭南"
+    },
+    {
+      "index": 262,
+      "id": "9号线:29",
+      "lineName": "9号线",
+      "stationNumber": 29,
+      "name": "鹿丹村"
+    },
+    {
+      "index": 263,
+      "id": "9号线:30",
+      "lineName": "9号线",
+      "stationNumber": 30,
+      "name": "人民南"
+    },
+    {
+      "index": 264,
+      "id": "9号线:31",
+      "lineName": "9号线",
+      "stationNumber": 31,
+      "name": "向西村"
+    },
+    {
+      "index": 265,
+      "id": "9号线:32",
+      "lineName": "9号线",
+      "stationNumber": 32,
+      "name": "文锦"
+    },
+    {
+      "index": 266,
+      "id": "10号线:1",
+      "lineName": "10号线",
+      "stationNumber": 1,
+      "name": "福田口岸"
+    },
+    {
+      "index": 267,
+      "id": "10号线:2",
+      "lineName": "10号线",
+      "stationNumber": 2,
+      "name": "福民"
+    },
+    {
+      "index": 268,
+      "id": "10号线:3",
+      "lineName": "10号线",
+      "stationNumber": 3,
+      "name": "岗厦"
+    },
+    {
+      "index": 269,
+      "id": "10号线:4",
+      "lineName": "10号线",
+      "stationNumber": 4,
+      "name": "岗厦北"
+    },
+    {
+      "index": 270,
+      "id": "10号线:5",
+      "lineName": "10号线",
+      "stationNumber": 5,
+      "name": "莲花村"
+    },
+    {
+      "index": 271,
+      "id": "10号线:6",
+      "lineName": "10号线",
+      "stationNumber": 6,
+      "name": "冬瓜岭"
+    },
+    {
+      "index": 272,
+      "id": "10号线:7",
+      "lineName": "10号线",
+      "stationNumber": 7,
+      "name": "孖岭"
+    },
+    {
+      "index": 273,
+      "id": "10号线:8",
+      "lineName": "10号线",
+      "stationNumber": 8,
+      "name": "雅宝"
+    },
+    {
+      "index": 274,
+      "id": "10号线:9",
+      "lineName": "10号线",
+      "stationNumber": 9,
+      "name": "南坑"
+    },
+    {
+      "index": 275,
+      "id": "10号线:10",
+      "lineName": "10号线",
+      "stationNumber": 10,
+      "name": "光雅园"
+    },
+    {
+      "index": 276,
+      "id": "10号线:11",
+      "lineName": "10号线",
+      "stationNumber": 11,
+      "name": "五和"
+    },
+    {
+      "index": 277,
+      "id": "10号线:12",
+      "lineName": "10号线",
+      "stationNumber": 12,
+      "name": "坂田北"
+    },
+    {
+      "index": 278,
+      "id": "10号线:13",
+      "lineName": "10号线",
+      "stationNumber": 13,
+      "name": "贝尔路"
+    },
+    {
+      "index": 279,
+      "id": "10号线:14",
+      "lineName": "10号线",
+      "stationNumber": 14,
+      "name": "华为"
+    },
+    {
+      "index": 280,
+      "id": "10号线:15",
+      "lineName": "10号线",
+      "stationNumber": 15,
+      "name": "岗头"
+    },
+    {
+      "index": 281,
+      "id": "10号线:16",
+      "lineName": "10号线",
+      "stationNumber": 16,
+      "name": "雪象"
+    },
+    {
+      "index": 282,
+      "id": "10号线:17",
+      "lineName": "10号线",
+      "stationNumber": 17,
+      "name": "甘坑"
+    },
+    {
+      "index": 283,
+      "id": "10号线:18",
+      "lineName": "10号线",
+      "stationNumber": 18,
+      "name": "凉帽山"
+    },
+    {
+      "index": 284,
+      "id": "10号线:19",
+      "lineName": "10号线",
+      "stationNumber": 19,
+      "name": "上李朗"
+    },
+    {
+      "index": 285,
+      "id": "10号线:20",
+      "lineName": "10号线",
+      "stationNumber": 20,
+      "name": "木古"
+    },
+    {
+      "index": 286,
+      "id": "10号线:21",
+      "lineName": "10号线",
+      "stationNumber": 21,
+      "name": "华南城"
+    },
+    {
+      "index": 287,
+      "id": "10号线:22",
+      "lineName": "10号线",
+      "stationNumber": 22,
+      "name": "禾花"
+    },
+    {
+      "index": 288,
+      "id": "10号线:23",
+      "lineName": "10号线",
+      "stationNumber": 23,
+      "name": "平湖"
+    },
+    {
+      "index": 289,
+      "id": "10号线:24",
+      "lineName": "10号线",
+      "stationNumber": 24,
+      "name": "双拥街"
+    },
+    {
+      "index": 290,
+      "id": "11号线:1",
+      "lineName": "11号线",
+      "stationNumber": 1,
+      "name": "红岭南"
+    },
+    {
+      "index": 291,
+      "id": "11号线:2",
+      "lineName": "11号线",
+      "stationNumber": 2,
+      "name": "华强南"
+    },
+    {
+      "index": 292,
+      "id": "11号线:3",
+      "lineName": "11号线",
+      "stationNumber": 3,
+      "name": "福星"
+    },
+    {
+      "index": 293,
+      "id": "11号线:4",
+      "lineName": "11号线",
+      "stationNumber": 4,
+      "name": "岗厦北"
+    },
+    {
+      "index": 294,
+      "id": "11号线:5",
+      "lineName": "11号线",
+      "stationNumber": 5,
+      "name": "福田"
+    },
+    {
+      "index": 295,
+      "id": "11号线:6",
+      "lineName": "11号线",
+      "stationNumber": 6,
+      "name": "车公庙"
+    },
+    {
+      "index": 296,
+      "id": "11号线:7",
+      "lineName": "11号线",
+      "stationNumber": 7,
+      "name": "红树湾南"
+    },
+    {
+      "index": 297,
+      "id": "11号线:8",
+      "lineName": "11号线",
+      "stationNumber": 8,
+      "name": "后海"
+    },
+    {
+      "index": 298,
+      "id": "11号线:9",
+      "lineName": "11号线",
+      "stationNumber": 9,
+      "name": "南山"
+    },
+    {
+      "index": 299,
+      "id": "11号线:10",
+      "lineName": "11号线",
+      "stationNumber": 10,
+      "name": "前海湾"
+    },
+    {
+      "index": 300,
+      "id": "11号线:11",
+      "lineName": "11号线",
+      "stationNumber": 11,
+      "name": "宝安"
+    },
+    {
+      "index": 301,
+      "id": "11号线:12",
+      "lineName": "11号线",
+      "stationNumber": 12,
+      "name": "碧海湾"
+    },
+    {
+      "index": 302,
+      "id": "11号线:13",
+      "lineName": "11号线",
+      "stationNumber": 13,
+      "name": "机场"
+    },
+    {
+      "index": 303,
+      "id": "11号线:14",
+      "lineName": "11号线",
+      "stationNumber": 14,
+      "name": "机场北"
+    },
+    {
+      "index": 304,
+      "id": "11号线:15",
+      "lineName": "11号线",
+      "stationNumber": 15,
+      "name": "福永"
+    },
+    {
+      "index": 305,
+      "id": "11号线:16",
+      "lineName": "11号线",
+      "stationNumber": 16,
+      "name": "桥头"
+    },
+    {
+      "index": 306,
+      "id": "11号线:17",
+      "lineName": "11号线",
+      "stationNumber": 17,
+      "name": "塘尾"
+    },
+    {
+      "index": 307,
+      "id": "11号线:18",
+      "lineName": "11号线",
+      "stationNumber": 18,
+      "name": "马安山"
+    },
+    {
+      "index": 308,
+      "id": "11号线:19",
+      "lineName": "11号线",
+      "stationNumber": 19,
+      "name": "沙井"
+    },
+    {
+      "index": 309,
+      "id": "11号线:20",
+      "lineName": "11号线",
+      "stationNumber": 20,
+      "name": "后亭"
+    },
+    {
+      "index": 310,
+      "id": "11号线:21",
+      "lineName": "11号线",
+      "stationNumber": 21,
+      "name": "松岗"
+    },
+    {
+      "index": 311,
+      "id": "11号线:22",
+      "lineName": "11号线",
+      "stationNumber": 22,
+      "name": "碧头"
+    },
+    {
+      "index": 312,
+      "id": "12号线:1",
+      "lineName": "12号线",
+      "stationNumber": 1,
+      "name": "左炮台东"
+    },
+    {
+      "index": 313,
+      "id": "12号线:2",
+      "lineName": "12号线",
+      "stationNumber": 2,
+      "name": "太子湾"
+    },
+    {
+      "index": 314,
+      "id": "12号线:3",
+      "lineName": "12号线",
+      "stationNumber": 3,
+      "name": "海上世界"
+    },
+    {
+      "index": 315,
+      "id": "12号线:4",
+      "lineName": "12号线",
+      "stationNumber": 4,
+      "name": "花果山"
+    },
+    {
+      "index": 316,
+      "id": "12号线:5",
+      "lineName": "12号线",
+      "stationNumber": 5,
+      "name": "四海"
+    },
+    {
+      "index": 317,
+      "id": "12号线:6",
+      "lineName": "12号线",
+      "stationNumber": 6,
+      "name": "南油"
+    },
+    {
+      "index": 318,
+      "id": "12号线:7",
+      "lineName": "12号线",
+      "stationNumber": 7,
+      "name": "南光"
+    },
+    {
+      "index": 319,
+      "id": "12号线:8",
+      "lineName": "12号线",
+      "stationNumber": 8,
+      "name": "南山"
+    },
+    {
+      "index": 320,
+      "id": "12号线:9",
+      "lineName": "12号线",
+      "stationNumber": 9,
+      "name": "桃园"
+    },
+    {
+      "index": 321,
+      "id": "12号线:10",
+      "lineName": "12号线",
+      "stationNumber": 10,
+      "name": "南头古城"
+    },
+    {
+      "index": 322,
+      "id": "12号线:11",
+      "lineName": "12号线",
+      "stationNumber": 11,
+      "name": "中山公园"
+    },
+    {
+      "index": 323,
+      "id": "12号线:12",
+      "lineName": "12号线",
+      "stationNumber": 12,
+      "name": "同乐南"
+    },
+    {
+      "index": 324,
+      "id": "12号线:13",
+      "lineName": "12号线",
+      "stationNumber": 13,
+      "name": "新安公园"
+    },
+    {
+      "index": 325,
+      "id": "12号线:14",
+      "lineName": "12号线",
+      "stationNumber": 14,
+      "name": "灵芝"
+    },
+    {
+      "index": 326,
+      "id": "12号线:15",
+      "lineName": "12号线",
+      "stationNumber": 15,
+      "name": "上川"
+    },
+    {
+      "index": 327,
+      "id": "12号线:16",
+      "lineName": "12号线",
+      "stationNumber": 16,
+      "name": "流塘"
+    },
+    {
+      "index": 328,
+      "id": "12号线:17",
+      "lineName": "12号线",
+      "stationNumber": 17,
+      "name": "宝安客运站"
+    },
+    {
+      "index": 329,
+      "id": "12号线:18",
+      "lineName": "12号线",
+      "stationNumber": 18,
+      "name": "宝田一路"
+    },
+    {
+      "index": 330,
+      "id": "12号线:19",
+      "lineName": "12号线",
+      "stationNumber": 19,
+      "name": "平峦山"
+    },
+    {
+      "index": 331,
+      "id": "12号线:20",
+      "lineName": "12号线",
+      "stationNumber": 20,
+      "name": "西乡桃源"
+    },
+    {
+      "index": 332,
+      "id": "12号线:21",
+      "lineName": "12号线",
+      "stationNumber": 21,
+      "name": "钟屋南"
+    },
+    {
+      "index": 333,
+      "id": "12号线:22",
+      "lineName": "12号线",
+      "stationNumber": 22,
+      "name": "黄田"
+    },
+    {
+      "index": 334,
+      "id": "12号线:23",
+      "lineName": "12号线",
+      "stationNumber": 23,
+      "name": "兴围"
+    },
+    {
+      "index": 335,
+      "id": "12号线:24",
+      "lineName": "12号线",
+      "stationNumber": 24,
+      "name": "机场东"
+    },
+    {
+      "index": 336,
+      "id": "12号线:25",
+      "lineName": "12号线",
+      "stationNumber": 25,
+      "name": "福围"
+    },
+    {
+      "index": 337,
+      "id": "12号线:26",
+      "lineName": "12号线",
+      "stationNumber": 26,
+      "name": "怀德"
+    },
+    {
+      "index": 338,
+      "id": "12号线:27",
+      "lineName": "12号线",
+      "stationNumber": 27,
+      "name": "福永"
+    },
+    {
+      "index": 339,
+      "id": "12号线:28",
+      "lineName": "12号线",
+      "stationNumber": 28,
+      "name": "桥头西"
+    },
+    {
+      "index": 340,
+      "id": "12号线:29",
+      "lineName": "12号线",
+      "stationNumber": 29,
+      "name": "福海西"
+    },
+    {
+      "index": 341,
+      "id": "12号线:30",
+      "lineName": "12号线",
+      "stationNumber": 30,
+      "name": "国展"
+    },
+    {
+      "index": 342,
+      "id": "12号线:31",
+      "lineName": "12号线",
+      "stationNumber": 31,
+      "name": "国展北"
+    },
+    {
+      "index": 343,
+      "id": "12号线:32",
+      "lineName": "12号线",
+      "stationNumber": 32,
+      "name": "海上田园南"
+    },
+    {
+      "index": 344,
+      "id": "12号线:33",
+      "lineName": "12号线",
+      "stationNumber": 33,
+      "name": "海上田园东"
+    },
+    {
+      "index": 345,
+      "id": "12号线:34",
+      "lineName": "12号线",
+      "stationNumber": 34,
+      "name": "蚝乡"
+    },
+    {
+      "index": 346,
+      "id": "12号线:35",
+      "lineName": "12号线",
+      "stationNumber": 35,
+      "name": "沙蚝"
+    },
+    {
+      "index": 347,
+      "id": "12号线:36",
+      "lineName": "12号线",
+      "stationNumber": 36,
+      "name": "沙井古墟"
+    },
+    {
+      "index": 348,
+      "id": "12号线:37",
+      "lineName": "12号线",
+      "stationNumber": 37,
+      "name": "步涌"
+    },
+    {
+      "index": 349,
+      "id": "12号线:38",
+      "lineName": "12号线",
+      "stationNumber": 38,
+      "name": "朗下"
+    },
+    {
+      "index": 350,
+      "id": "12号线:39",
+      "lineName": "12号线",
+      "stationNumber": 39,
+      "name": "松岗"
+    },
+    {
+      "index": 351,
+      "id": "13号线:1",
+      "lineName": "13号线",
+      "stationNumber": 1,
+      "name": "深圳湾口岸"
+    },
+    {
+      "index": 352,
+      "id": "13号线:2",
+      "lineName": "13号线",
+      "stationNumber": 2,
+      "name": "人才公园"
+    },
+    {
+      "index": 353,
+      "id": "13号线:3",
+      "lineName": "13号线",
+      "stationNumber": 3,
+      "name": "后海"
+    },
+    {
+      "index": 354,
+      "id": "13号线:4",
+      "lineName": "13号线",
+      "stationNumber": 4,
+      "name": "科苑"
+    },
+    {
+      "index": 355,
+      "id": "13号线:5",
+      "lineName": "13号线",
+      "stationNumber": 5,
+      "name": "粤海门"
+    },
+    {
+      "index": 356,
+      "id": "13号线:6",
+      "lineName": "13号线",
+      "stationNumber": 6,
+      "name": "深大"
+    },
+    {
+      "index": 357,
+      "id": "13号线:7",
+      "lineName": "13号线",
+      "stationNumber": 7,
+      "name": "高新中"
+    },
+    {
+      "index": 358,
+      "id": "13号线:8",
+      "lineName": "13号线",
+      "stationNumber": 8,
+      "name": "高新北"
+    },
+    {
+      "index": 359,
+      "id": "13号线:9",
+      "lineName": "13号线",
+      "stationNumber": 9,
+      "name": "石鼓"
+    },
+    {
+      "index": 360,
+      "id": "13号线:10",
+      "lineName": "13号线",
+      "stationNumber": 10,
+      "name": "留仙洞"
+    },
+    {
+      "index": 361,
+      "id": "13号线:11",
+      "lineName": "13号线",
+      "stationNumber": 11,
+      "name": "百旺"
+    },
+    {
+      "index": 362,
+      "id": "13号线:12",
+      "lineName": "13号线",
+      "stationNumber": 12,
+      "name": "应人石"
+    },
+    {
+      "index": 363,
+      "id": "13号线:13",
+      "lineName": "13号线",
+      "stationNumber": 13,
+      "name": "罗租"
+    },
+    {
+      "index": 364,
+      "id": "13号线:14",
+      "lineName": "13号线",
+      "stationNumber": 14,
+      "name": "石岩"
+    },
+    {
+      "index": 365,
+      "id": "13号线:15",
+      "lineName": "13号线",
+      "stationNumber": 15,
+      "name": "上屋"
+    },
+    {
+      "index": 366,
+      "id": "13号线:16",
+      "lineName": "13号线",
+      "stationNumber": 16,
+      "name": "红坳公园"
+    },
+    {
+      "index": 367,
+      "id": "13号线:17",
+      "lineName": "13号线",
+      "stationNumber": 17,
+      "name": "光明城"
+    },
+    {
+      "index": 368,
+      "id": "13号线:18",
+      "lineName": "13号线",
+      "stationNumber": 18,
+      "name": "德雅路"
+    },
+    {
+      "index": 369,
+      "id": "13号线:19",
+      "lineName": "13号线",
+      "stationNumber": 19,
+      "name": "凤凰城"
+    },
+    {
+      "index": 370,
+      "id": "13号线:20",
+      "lineName": "13号线",
+      "stationNumber": 20,
+      "name": "月亮路"
+    },
+    {
+      "index": 371,
+      "id": "13号线:21",
+      "lineName": "13号线",
+      "stationNumber": 21,
+      "name": "将围"
+    },
+    {
+      "index": 372,
+      "id": "13号线:22",
+      "lineName": "13号线",
+      "stationNumber": 22,
+      "name": "新庄"
+    },
+    {
+      "index": 373,
+      "id": "13号线:23",
+      "lineName": "13号线",
+      "stationNumber": 23,
+      "name": "公明广场"
+    },
+    {
+      "index": 374,
+      "id": "13号线:24",
+      "lineName": "13号线",
+      "stationNumber": 24,
+      "name": "上村"
+    },
+    {
+      "index": 375,
+      "id": "13号线:25",
+      "lineName": "13号线",
+      "stationNumber": 25,
+      "name": "下村"
+    },
+    {
+      "index": 376,
+      "id": "13号线:26",
+      "lineName": "13号线",
+      "stationNumber": 26,
+      "name": "李松蓢"
+    },
+    {
+      "index": 377,
+      "id": "14号线:1",
+      "lineName": "14号线",
+      "stationNumber": 1,
+      "name": "岗厦北"
+    },
+    {
+      "index": 378,
+      "id": "14号线:2",
+      "lineName": "14号线",
+      "stationNumber": 2,
+      "name": "黄木岗"
+    },
+    {
+      "index": 379,
+      "id": "14号线:3",
+      "lineName": "14号线",
+      "stationNumber": 3,
+      "name": "罗湖北"
+    },
+    {
+      "index": 380,
+      "id": "14号线:4",
+      "lineName": "14号线",
+      "stationNumber": 4,
+      "name": "布吉"
+    },
+    {
+      "index": 381,
+      "id": "14号线:5",
+      "lineName": "14号线",
+      "stationNumber": 5,
+      "name": "石芽岭"
+    },
+    {
+      "index": 382,
+      "id": "14号线:6",
+      "lineName": "14号线",
+      "stationNumber": 6,
+      "name": "六约北"
+    },
+    {
+      "index": 383,
+      "id": "14号线:7",
+      "lineName": "14号线",
+      "stationNumber": 7,
+      "name": "四联"
+    },
+    {
+      "index": 384,
+      "id": "14号线:8",
+      "lineName": "14号线",
+      "stationNumber": 8,
+      "name": "坳背"
+    },
+    {
+      "index": 385,
+      "id": "14号线:9",
+      "lineName": "14号线",
+      "stationNumber": 9,
+      "name": "大运"
+    },
+    {
+      "index": 386,
+      "id": "14号线:10",
+      "lineName": "14号线",
+      "stationNumber": 10,
+      "name": "嶂背"
+    },
+    {
+      "index": 387,
+      "id": "14号线:11",
+      "lineName": "14号线",
+      "stationNumber": 11,
+      "name": "南约"
+    },
+    {
+      "index": 388,
+      "id": "14号线:12",
+      "lineName": "14号线",
+      "stationNumber": 12,
+      "name": "宝龙"
+    },
+    {
+      "index": 389,
+      "id": "14号线:13",
+      "lineName": "14号线",
+      "stationNumber": 13,
+      "name": "锦龙"
+    },
+    {
+      "index": 390,
+      "id": "14号线:14",
+      "lineName": "14号线",
+      "stationNumber": 14,
+      "name": "坪山围"
+    },
+    {
+      "index": 391,
+      "id": "14号线:15",
+      "lineName": "14号线",
+      "stationNumber": 15,
+      "name": "坪山广场"
+    },
+    {
+      "index": 392,
+      "id": "14号线:16",
+      "lineName": "14号线",
+      "stationNumber": 16,
+      "name": "坪山中心"
+    },
+    {
+      "index": 393,
+      "id": "14号线:17",
+      "lineName": "14号线",
+      "stationNumber": 17,
+      "name": "坑梓"
+    },
+    {
+      "index": 394,
+      "id": "14号线:18",
+      "lineName": "14号线",
+      "stationNumber": 18,
+      "name": "沙田"
+    },
+    {
+      "index": 395,
+      "id": "16号线:1",
+      "lineName": "16号线",
+      "stationNumber": 1,
+      "name": "园山西坑"
+    },
+    {
+      "index": 396,
+      "id": "16号线:2",
+      "lineName": "16号线",
+      "stationNumber": 2,
+      "name": "安良"
+    },
+    {
+      "index": 397,
+      "id": "16号线:3",
+      "lineName": "16号线",
+      "stationNumber": 3,
+      "name": "福坑"
+    },
+    {
+      "index": 398,
+      "id": "16号线:4",
+      "lineName": "16号线",
+      "stationNumber": 4,
+      "name": "大康"
+    },
+    {
+      "index": 399,
+      "id": "16号线:5",
+      "lineName": "16号线",
+      "stationNumber": 5,
+      "name": "园山"
+    },
+    {
+      "index": 400,
+      "id": "16号线:6",
+      "lineName": "16号线",
+      "stationNumber": 6,
+      "name": "大安"
+    },
+    {
+      "index": 401,
+      "id": "16号线:7",
+      "lineName": "16号线",
+      "stationNumber": 7,
+      "name": "吉溪"
+    },
+    {
+      "index": 402,
+      "id": "16号线:8",
+      "lineName": "16号线",
+      "stationNumber": 8,
+      "name": "金源"
+    },
+    {
+      "index": 403,
+      "id": "16号线:9",
+      "lineName": "16号线",
+      "stationNumber": 9,
+      "name": "大运"
+    },
+    {
+      "index": 404,
+      "id": "16号线:10",
+      "lineName": "16号线",
+      "stationNumber": 10,
+      "name": "大运中心"
+    },
+    {
+      "index": 405,
+      "id": "16号线:11",
+      "lineName": "16号线",
+      "stationNumber": 11,
+      "name": "龙城公园"
+    },
+    {
+      "index": 406,
+      "id": "16号线:12",
+      "lineName": "16号线",
+      "stationNumber": 12,
+      "name": "黄阁坑"
+    },
+    {
+      "index": 407,
+      "id": "16号线:13",
+      "lineName": "16号线",
+      "stationNumber": 13,
+      "name": "愉园"
+    },
+    {
+      "index": 408,
+      "id": "16号线:14",
+      "lineName": "16号线",
+      "stationNumber": 14,
+      "name": "回龙埔"
+    },
+    {
+      "index": 409,
+      "id": "16号线:15",
+      "lineName": "16号线",
+      "stationNumber": 15,
+      "name": "尚景"
+    },
+    {
+      "index": 410,
+      "id": "16号线:16",
+      "lineName": "16号线",
+      "stationNumber": 16,
+      "name": "盛平"
+    },
+    {
+      "index": 411,
+      "id": "16号线:17",
+      "lineName": "16号线",
+      "stationNumber": 17,
+      "name": "龙园"
+    },
+    {
+      "index": 412,
+      "id": "16号线:18",
+      "lineName": "16号线",
+      "stationNumber": 18,
+      "name": "双龙"
+    },
+    {
+      "index": 413,
+      "id": "16号线:19",
+      "lineName": "16号线",
+      "stationNumber": 19,
+      "name": "新塘围"
+    },
+    {
+      "index": 414,
+      "id": "16号线:20",
+      "lineName": "16号线",
+      "stationNumber": 20,
+      "name": "龙东"
+    },
+    {
+      "index": 415,
+      "id": "16号线:21",
+      "lineName": "16号线",
+      "stationNumber": 21,
+      "name": "宝龙同乐"
+    },
+    {
+      "index": 416,
+      "id": "16号线:22",
+      "lineName": "16号线",
+      "stationNumber": 22,
+      "name": "坪山"
+    },
+    {
+      "index": 417,
+      "id": "16号线:23",
+      "lineName": "16号线",
+      "stationNumber": 23,
+      "name": "新和"
+    },
+    {
+      "index": 418,
+      "id": "16号线:24",
+      "lineName": "16号线",
+      "stationNumber": 24,
+      "name": "六和"
+    },
+    {
+      "index": 419,
+      "id": "16号线:25",
+      "lineName": "16号线",
+      "stationNumber": 25,
+      "name": "坪山围"
+    },
+    {
+      "index": 420,
+      "id": "16号线:26",
+      "lineName": "16号线",
+      "stationNumber": 26,
+      "name": "坪环"
+    },
+    {
+      "index": 421,
+      "id": "16号线:27",
+      "lineName": "16号线",
+      "stationNumber": 27,
+      "name": "东纵纪念馆"
+    },
+    {
+      "index": 422,
+      "id": "16号线:28",
+      "lineName": "16号线",
+      "stationNumber": 28,
+      "name": "沙壆"
+    },
+    {
+      "index": 423,
+      "id": "16号线:29",
+      "lineName": "16号线",
+      "stationNumber": 29,
+      "name": "燕子湖"
+    },
+    {
+      "index": 424,
+      "id": "16号线:30",
+      "lineName": "16号线",
+      "stationNumber": 30,
+      "name": "石井"
+    },
+    {
+      "index": 425,
+      "id": "16号线:31",
+      "lineName": "16号线",
+      "stationNumber": 31,
+      "name": "技术大学"
+    },
+    {
+      "index": 426,
+      "id": "16号线:32",
+      "lineName": "16号线",
+      "stationNumber": 32,
+      "name": "田心"
+    },
+    {
+      "index": 427,
+      "id": "20号线:1",
+      "lineName": "20号线",
+      "stationNumber": 1,
+      "name": "机场北"
+    },
+    {
+      "index": 428,
+      "id": "20号线:2",
+      "lineName": "20号线",
+      "stationNumber": 2,
+      "name": "国展南"
+    },
+    {
+      "index": 429,
+      "id": "20号线:3",
+      "lineName": "20号线",
+      "stationNumber": 3,
+      "name": "国展"
+    },
+    {
+      "index": 430,
+      "id": "20号线:4",
+      "lineName": "20号线",
+      "stationNumber": 4,
+      "name": "国展北"
+    },
+    {
+      "index": 431,
+      "id": "20号线:5",
+      "lineName": "20号线",
+      "stationNumber": 5,
+      "name": "会展城"
+    }
+  ]
+}

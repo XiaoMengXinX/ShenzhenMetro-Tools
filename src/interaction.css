@@ -1,0 +1,270 @@
+.map-viewport {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.map-viewport.is-panning { cursor: grabbing; }
+.map-viewport.is-one-finger-zoom { cursor: ns-resize; }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.line-list {
+  height: auto;
+  min-height: 0;
+  flex: 1;
+}
+
+.sidebar-footer {
+  position: static;
+  flex: none;
+  margin-top: 12px;
+}
+
+.legend-dot.interchange {
+  width: 22px;
+  height: 12px;
+  border: 3px solid #697887;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: none;
+}
+
+.metro-svg {
+  transform-origin: 0 0 !important;
+  transition: none !important;
+  will-change: transform;
+}
+
+.station-hit-target {
+  fill: transparent;
+  stroke: none;
+  pointer-events: all;
+}
+
+.station-label-group,
+.station-label {
+  pointer-events: all;
+  cursor: pointer;
+}
+
+.search-area {
+  position: relative;
+}
+
+.search-area .search-results {
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+}
+
+/* Single-line view keeps the full network as a neutral reference layer. */
+.line-muted {
+  opacity: .58;
+}
+
+.station-node.station-muted > circle:not(.station-hit-target) {
+  stroke: #aeb5bf;
+}
+
+.station-node.station-muted > rect {
+  stroke: #8f98a3;
+}
+
+.sidebar-backdrop {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    min-width: 0;
+    overscroll-behavior: none;
+  }
+
+  .app-shell {
+    height: 100dvh;
+  }
+
+  .sidebar,
+  .sidebar.is-collapsed {
+    position: fixed;
+    z-index: 10;
+    inset: 0 auto 0 0;
+    width: min(88vw, 360px) !important;
+    height: 100dvh;
+    padding: calc(20px + env(safe-area-inset-top)) 18px calc(16px + env(safe-area-inset-bottom));
+    border-right: 1px solid #e4eaf0;
+    box-shadow: 12px 0 36px rgb(23 32 51 / 18%);
+    transform: translateX(0);
+    transition: transform .24s ease, box-shadow .24s ease;
+  }
+
+  .sidebar.is-collapsed {
+    transform: translateX(-105%);
+    box-shadow: none;
+    pointer-events: none;
+  }
+
+  .sidebar-heading {
+    margin-bottom: 18px;
+  }
+
+  .sidebar h1 {
+    font-size: 27px;
+  }
+
+  .section-label {
+    margin-top: 20px;
+  }
+
+  .sidebar-backdrop {
+    display: block;
+    position: fixed;
+    z-index: 9;
+    inset: 0;
+    border: 0;
+    padding: 0;
+    background: rgb(23 32 51 / 28%);
+    backdrop-filter: blur(2px);
+  }
+
+  .map-panel {
+    width: 100%;
+  }
+
+  .sidebar-toggle {
+    position: fixed;
+    z-index: 8;
+    left: max(10px, env(safe-area-inset-left));
+    top: calc(10px + env(safe-area-inset-top));
+    width: 40px;
+    height: 40px;
+    transform: none;
+  }
+
+  .sidebar-toggle:hover {
+    transform: none;
+  }
+
+  .map-toolbar {
+    height: calc(58px + env(safe-area-inset-top));
+    padding: calc(9px + env(safe-area-inset-top)) 8px 9px 58px;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .map-title {
+    display: none;
+  }
+
+  .map-tools {
+    width: 100%;
+    min-width: 0;
+    gap: 4px;
+    overflow: visible;
+    scrollbar-width: none;
+  }
+
+  .map-tools::-webkit-scrollbar {
+    display: none;
+  }
+
+  .map-tools > button {
+    width: 32px;
+    min-width: 32px;
+    height: 34px;
+    justify-content: center;
+    padding: 0;
+    overflow: hidden;
+    font-size: 0;
+  }
+
+  .map-tools > .reset-view-button {
+    display: grid;
+    place-items: center;
+    flex: 0 0 34px;
+    width: 34px;
+    min-width: 34px;
+    height: 34px;
+    padding: 0;
+    line-height: 0;
+  }
+
+  .reset-view-button span {
+    display: none;
+  }
+
+  .map-tools > button svg {
+    display: block;
+    width: 17px;
+    height: 17px;
+    margin: 0;
+  }
+
+  .map-tools .fare-type-control button {
+    flex: 1;
+    justify-content: center;
+    padding: 0 6px;
+    white-space: nowrap;
+  }
+
+  .fare-type-control {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .zoom-control {
+    flex: none;
+  }
+
+  .zoom-control button {
+    padding: 0 7px;
+  }
+
+  .zoom-control span {
+    width: 38px;
+  }
+
+  .zoom-control button:disabled {
+    opacity: .35;
+    cursor: default;
+  }
+
+  .map-canvas {
+    inset: calc(58px + env(safe-area-inset-top)) 6px calc(26px + env(safe-area-inset-bottom));
+    border-radius: 12px;
+  }
+
+  .map-note {
+    right: 10px;
+    bottom: calc(7px + env(safe-area-inset-bottom));
+    left: 10px;
+    overflow: hidden;
+    font-size: 9px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .station-card {
+    right: 10px;
+    bottom: calc(38px + env(safe-area-inset-bottom));
+    left: 10px;
+    width: auto;
+  }
+}

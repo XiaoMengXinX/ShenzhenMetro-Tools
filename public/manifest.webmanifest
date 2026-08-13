@@ -1,0 +1,28 @@
+{
+  "id": "/",
+  "name": "深圳地铁小助手",
+  "short_name": "深圳地铁小助手",
+  "description": "集线路图、票价查询与出行辅助功能于一体的深圳地铁工具",
+  "lang": "zh-CN",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f6f8fb",
+  "theme_color": "#172033",
+  "categories": ["navigation", "travel", "utilities"],
+  "icons": [
+    {
+      "src": "/icons/metro-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icons/metro-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

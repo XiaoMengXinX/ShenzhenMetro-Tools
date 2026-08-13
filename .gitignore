@@ -1,0 +1,12 @@
+node_modules/
+dist/
+.codex-tmp/
+
+.DS_Store
+*.log
+.env
+.env.*
+!.env.example
+
+.vite/
+coverage/
