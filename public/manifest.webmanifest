@@ -2,7 +2,7 @@
   "id": "/",
   "name": "深圳地铁小助手",
   "short_name": "深圳地铁小助手",
-  "description": "集线路图、票价查询与出行辅助功能于一体的深圳地铁工具",
+  "description": "深圳地铁票价、里程、运行时间查询工具",
   "lang": "zh-CN",
   "start_url": "/",
   "scope": "/",

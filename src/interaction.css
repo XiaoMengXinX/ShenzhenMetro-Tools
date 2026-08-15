@@ -5,6 +5,17 @@
   cursor: grab;
   touch-action: none;
   user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.map-viewport * {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .map-viewport.is-panning { cursor: grabbing; }
@@ -19,6 +30,66 @@
   height: auto;
   min-height: 0;
   flex: 1;
+}
+
+.line-group {
+  margin-bottom: 2px;
+}
+
+.line-group .line-item {
+  margin-bottom: 0;
+}
+
+.line-group.is-expanded .line-chevron {
+  transform: rotate(180deg);
+}
+
+.line-stations {
+  margin: 2px 5px 8px 20px;
+  padding: 3px 0 3px 13px;
+  border-left: 1px solid #e5eaf0;
+}
+
+.line-station-item {
+  width: 100%;
+  min-height: 32px;
+  padding: 6px 8px;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  color: #566477;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.line-station-item:hover,
+.line-station-item.active {
+  background: #f2f5f8;
+  color: #172033;
+}
+
+.station-sequence {
+  width: 18px;
+  flex: none;
+  color: #a3adba;
+  font: 9px 'DM Mono', monospace;
+}
+
+.station-list-name {
+  min-width: 0;
+  font-size: 11px;
+}
+
+.transfer-tag {
+  margin-left: auto;
+  padding: 2px 5px;
+  border-radius: 999px;
+  background: #eef2f6;
+  color: #778493;
+  font-size: 8px;
 }
 
 .sidebar-footer {
@@ -82,6 +153,14 @@
 }
 
 @media (max-width: 720px) {
+  .map-panel,
+  .map-panel * {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
   html,
   body,
   #root {
@@ -104,7 +183,7 @@
     position: fixed;
     z-index: 10;
     inset: 0 auto 0 0;
-    width: min(88vw, 360px) !important;
+    width: min(78vw, 320px) !important;
     height: 100dvh;
     padding: calc(20px + env(safe-area-inset-top)) 18px calc(16px + env(safe-area-inset-bottom));
     border-right: 1px solid #e4eaf0;
@@ -217,14 +296,17 @@
     margin: 0;
   }
 
-  .map-tools .fare-type-control button {
+  .map-tools .fare-type-control button,
+  .map-tools .map-mode-control button {
     flex: 1;
     justify-content: center;
-    padding: 0 6px;
+    padding: 0 3px;
     white-space: nowrap;
+    font-size: 10px;
   }
 
-  .fare-type-control {
+  .fare-type-control,
+  .map-mode-control {
     min-width: 0;
     flex: 1;
   }
@@ -234,11 +316,11 @@
   }
 
   .zoom-control button {
-    padding: 0 7px;
+    padding: 0 5px;
   }
 
   .zoom-control span {
-    width: 38px;
+    width: 34px;
   }
 
   .zoom-control button:disabled {

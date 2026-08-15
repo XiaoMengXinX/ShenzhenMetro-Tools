@@ -1,0 +1,1760 @@
+{
+  "schemaVersion": 1,
+  "stations": [
+    {
+      "name": "爱联",
+      "full": "ailian",
+      "initials": "al"
+    },
+    {
+      "name": "安良",
+      "full": "anliang",
+      "initials": "al"
+    },
+    {
+      "name": "安托山",
+      "full": "antuoshan",
+      "initials": "ats"
+    },
+    {
+      "name": "坳背",
+      "full": "aobei",
+      "initials": "ab"
+    },
+    {
+      "name": "八卦岭",
+      "full": "bagualing",
+      "initials": "bgl"
+    },
+    {
+      "name": "白石龙",
+      "full": "baishilong",
+      "initials": "bsl"
+    },
+    {
+      "name": "白石塘",
+      "full": "baishitang",
+      "initials": "bst"
+    },
+    {
+      "name": "白石洲",
+      "full": "baishizhou",
+      "initials": "bsz"
+    },
+    {
+      "name": "百鸽笼",
+      "full": "baigelong",
+      "initials": "bgl"
+    },
+    {
+      "name": "百旺",
+      "full": "baiwanggangda",
+      "initials": "bwgd"
+    },
+    {
+      "name": "坂田",
+      "full": "bantian",
+      "initials": "bt"
+    },
+    {
+      "name": "坂田北",
+      "full": "bantianbei",
+      "initials": "btb"
+    },
+    {
+      "name": "宝安",
+      "full": "baoan",
+      "initials": "ba"
+    },
+    {
+      "name": "宝安客运",
+      "full": "baoankeyunzhan",
+      "initials": "bakyz"
+    },
+    {
+      "name": "宝安中心",
+      "full": "baoanzhongxin",
+      "initials": "bazx"
+    },
+    {
+      "name": "宝华",
+      "full": "baohua",
+      "initials": "bh"
+    },
+    {
+      "name": "宝龙",
+      "full": "baolong",
+      "initials": "bl"
+    },
+    {
+      "name": "宝龙同乐",
+      "full": "baolongtongle",
+      "initials": "bltl"
+    },
+    {
+      "name": "宝体",
+      "full": "baoti",
+      "initials": "bt"
+    },
+    {
+      "name": "宝田一路",
+      "full": "baotianyilu",
+      "initials": "btyl"
+    },
+    {
+      "name": "北大",
+      "full": "beida",
+      "initials": "bd"
+    },
+    {
+      "name": "贝尔路",
+      "full": "beierlu",
+      "initials": "bel"
+    },
+    {
+      "name": "碧海湾",
+      "full": "bihaiwan",
+      "initials": "bhw"
+    },
+    {
+      "name": "碧头",
+      "full": "bitou",
+      "initials": "bt"
+    },
+    {
+      "name": "碧眼",
+      "full": "biyan",
+      "initials": "by"
+    },
+    {
+      "name": "布吉",
+      "full": "buji",
+      "initials": "bj"
+    },
+    {
+      "name": "布心",
+      "full": "buxin",
+      "initials": "bx"
+    },
+    {
+      "name": "步涌",
+      "full": "buyong",
+      "initials": "by"
+    },
+    {
+      "name": "草埔",
+      "full": "caopu",
+      "initials": "cp"
+    },
+    {
+      "name": "茶光",
+      "full": "chaguang",
+      "initials": "cg"
+    },
+    {
+      "name": "车公庙",
+      "full": "chegongmiao",
+      "initials": "cgm"
+    },
+    {
+      "name": "赤湾",
+      "full": "chiwan",
+      "initials": "cw"
+    },
+    {
+      "name": "赤尾",
+      "full": "chiwei",
+      "initials": "cw"
+    },
+    {
+      "name": "翠竹",
+      "full": "cuizhu",
+      "initials": "cz"
+    },
+    {
+      "name": "大安",
+      "full": "daan",
+      "initials": "da"
+    },
+    {
+      "name": "大芬",
+      "full": "dafen",
+      "initials": "df"
+    },
+    {
+      "name": "大剧院",
+      "full": "dajuyuan",
+      "initials": "djy"
+    },
+    {
+      "name": "大康",
+      "full": "dakang",
+      "initials": "dk"
+    },
+    {
+      "name": "大梅沙",
+      "full": "dameisha",
+      "initials": "dms"
+    },
+    {
+      "name": "大新",
+      "full": "daxin",
+      "initials": "dx"
+    },
+    {
+      "name": "大学城",
+      "full": "daxuecheng",
+      "initials": "dxc"
+    },
+    {
+      "name": "大运",
+      "full": "dayun",
+      "initials": "dy"
+    },
+    {
+      "name": "大运中心",
+      "full": "dayunzhongxin",
+      "initials": "dyzx"
+    },
+    {
+      "name": "丹竹头",
+      "full": "danzhutou",
+      "initials": "dzt"
+    },
+    {
+      "name": "德雅路",
+      "full": "deyalu",
+      "initials": "dyl"
+    },
+    {
+      "name": "登良",
+      "full": "dengliang",
+      "initials": "dl"
+    },
+    {
+      "name": "低碳城",
+      "full": "ditancheng",
+      "initials": "dtc"
+    },
+    {
+      "name": "东角头",
+      "full": "dongjiaotou",
+      "initials": "djt"
+    },
+    {
+      "name": "东门",
+      "full": "dongmen",
+      "initials": "dm"
+    },
+    {
+      "name": "东纵纪念馆",
+      "full": "dongzongjinianguan",
+      "initials": "dzjng"
+    },
+    {
+      "name": "冬瓜岭",
+      "full": "donggualing",
+      "initials": "dgl"
+    },
+    {
+      "name": "翻身",
+      "full": "fanshen",
+      "initials": "fs"
+    },
+    {
+      "name": "凤凰城",
+      "full": "fenghuangcheng",
+      "initials": "fhc"
+    },
+    {
+      "name": "福保",
+      "full": "fubao",
+      "initials": "fb"
+    },
+    {
+      "name": "福海西",
+      "full": "fuhaixi",
+      "initials": "fhx"
+    },
+    {
+      "name": "福坑",
+      "full": "fukeng",
+      "initials": "fk"
+    },
+    {
+      "name": "福民",
+      "full": "fumin",
+      "initials": "fm"
+    },
+    {
+      "name": "福田",
+      "full": "futian",
+      "initials": "ft"
+    },
+    {
+      "name": "福田口岸",
+      "full": "futiankouan",
+      "initials": "ftka"
+    },
+    {
+      "name": "福围",
+      "full": "fuwei",
+      "initials": "fw"
+    },
+    {
+      "name": "福星",
+      "full": "fuxing",
+      "initials": "fx"
+    },
+    {
+      "name": "福永",
+      "full": "fuyong",
+      "initials": "fy"
+    },
+    {
+      "name": "富坪",
+      "full": "fuping",
+      "initials": "fp"
+    },
+    {
+      "name": "甘坑",
+      "full": "gankeng",
+      "initials": "gk"
+    },
+    {
+      "name": "岗厦",
+      "full": "gangxia",
+      "initials": "gx"
+    },
+    {
+      "name": "岗厦北",
+      "full": "gangxiabei",
+      "initials": "gxb"
+    },
+    {
+      "name": "岗头",
+      "full": "gangtou",
+      "initials": "gt"
+    },
+    {
+      "name": "高新北",
+      "full": "gaoxinbei",
+      "initials": "gxb"
+    },
+    {
+      "name": "高新南",
+      "full": "gaoxinnan",
+      "initials": "gxn"
+    },
+    {
+      "name": "高新园",
+      "full": "gaoxinyuan",
+      "initials": "gxy"
+    },
+    {
+      "name": "高新中",
+      "full": "gaoxinzhong",
+      "initials": "gxz"
+    },
+    {
+      "name": "公明广场",
+      "full": "gongmingguangchang",
+      "initials": "gmgc"
+    },
+    {
+      "name": "购物公园",
+      "full": "gouwugongyuan",
+      "initials": "gwgy"
+    },
+    {
+      "name": "固戍",
+      "full": "gushu",
+      "initials": "gs"
+    },
+    {
+      "name": "观澜",
+      "full": "guanlan",
+      "initials": "gl"
+    },
+    {
+      "name": "观澜湖",
+      "full": "guanlanhu",
+      "initials": "glh"
+    },
+    {
+      "name": "官田",
+      "full": "guantian",
+      "initials": "gt"
+    },
+    {
+      "name": "光明",
+      "full": "guangming",
+      "initials": "gm"
+    },
+    {
+      "name": "光明城",
+      "full": "guangmingcheng",
+      "initials": "gmc"
+    },
+    {
+      "name": "光明大街",
+      "full": "guangmingdajie",
+      "initials": "gmdj"
+    },
+    {
+      "name": "光雅园",
+      "full": "guangyayuan",
+      "initials": "gyy"
+    },
+    {
+      "name": "桂湾",
+      "full": "guiwan",
+      "initials": "gw"
+    },
+    {
+      "name": "国贸",
+      "full": "guomao",
+      "initials": "gm"
+    },
+    {
+      "name": "国展",
+      "full": "guozhan",
+      "initials": "gz"
+    },
+    {
+      "name": "国展北",
+      "full": "guozhanbei",
+      "initials": "gzb"
+    },
+    {
+      "name": "国展南",
+      "full": "guozhannan",
+      "initials": "gzn"
+    },
+    {
+      "name": "海山",
+      "full": "haishan",
+      "initials": "hs"
+    },
+    {
+      "name": "海上世界",
+      "full": "haishangshijie",
+      "initials": "hssj"
+    },
+    {
+      "name": "海上田园东",
+      "full": "haishangtianyuandong",
+      "initials": "hstyd"
+    },
+    {
+      "name": "海上田园南",
+      "full": "haishangtianyuannan",
+      "initials": "hstyn"
+    },
+    {
+      "name": "海月",
+      "full": "haiyue",
+      "initials": "hy"
+    },
+    {
+      "name": "翰岭",
+      "full": "hanling",
+      "initials": "hl"
+    },
+    {
+      "name": "蚝乡",
+      "full": "haoxiang",
+      "initials": "hx"
+    },
+    {
+      "name": "禾花",
+      "full": "hehua",
+      "initials": "hh"
+    },
+    {
+      "name": "合水口",
+      "full": "heshuikou",
+      "initials": "hsk"
+    },
+    {
+      "name": "荷坳",
+      "full": "heao",
+      "initials": "ha"
+    },
+    {
+      "name": "横岗",
+      "full": "henggang",
+      "initials": "hg"
+    },
+    {
+      "name": "红坳公园",
+      "full": "hongaogongyuan",
+      "initials": "hagy"
+    },
+    {
+      "name": "红花山",
+      "full": "honghuashan",
+      "initials": "hhs"
+    },
+    {
+      "name": "红岭",
+      "full": "hongling",
+      "initials": "hl"
+    },
+    {
+      "name": "红岭北",
+      "full": "honglingbei",
+      "initials": "hlb"
+    },
+    {
+      "name": "红岭南",
+      "full": "honglingnan",
+      "initials": "hln"
+    },
+    {
+      "name": "红山",
+      "full": "hongshan",
+      "initials": "hs"
+    },
+    {
+      "name": "红树湾",
+      "full": "hongshuwan",
+      "initials": "hsw"
+    },
+    {
+      "name": "红树湾南",
+      "full": "hongshuwannan",
+      "initials": "hswn"
+    },
+    {
+      "name": "洪湖",
+      "full": "honghu",
+      "initials": "hh"
+    },
+    {
+      "name": "洪浪北",
+      "full": "honglangbei",
+      "initials": "hlb"
+    },
+    {
+      "name": "虹桥公园",
+      "full": "hongqiaogongyuan",
+      "initials": "hqgy"
+    },
+    {
+      "name": "鸿安围",
+      "full": "honganwei",
+      "initials": "haw"
+    },
+    {
+      "name": "后海",
+      "full": "houhai",
+      "initials": "hh"
+    },
+    {
+      "name": "后瑞",
+      "full": "hourui",
+      "initials": "hr"
+    },
+    {
+      "name": "后亭",
+      "full": "houting",
+      "initials": "ht"
+    },
+    {
+      "name": "湖贝",
+      "full": "hubei",
+      "initials": "hb"
+    },
+    {
+      "name": "花果山",
+      "full": "huaguoshan",
+      "initials": "hgs"
+    },
+    {
+      "name": "华南城",
+      "full": "huanancheng",
+      "initials": "hnc"
+    },
+    {
+      "name": "华强北",
+      "full": "huaqiangbei",
+      "initials": "hqb"
+    },
+    {
+      "name": "华强路",
+      "full": "huaqianglu",
+      "initials": "hql"
+    },
+    {
+      "name": "华强南",
+      "full": "huaqiangnan",
+      "initials": "hqn"
+    },
+    {
+      "name": "华侨城",
+      "full": "huaqiaocheng",
+      "initials": "hqc"
+    },
+    {
+      "name": "华为",
+      "full": "huawei",
+      "initials": "hw"
+    },
+    {
+      "name": "华新",
+      "full": "huaxin",
+      "initials": "hx"
+    },
+    {
+      "name": "怀德",
+      "full": "huaide",
+      "initials": "hd"
+    },
+    {
+      "name": "皇岗村",
+      "full": "huanggangcun",
+      "initials": "hgc"
+    },
+    {
+      "name": "皇岗口岸",
+      "full": "huanggangkouan",
+      "initials": "hgka"
+    },
+    {
+      "name": "黄贝岭",
+      "full": "huangbeiling",
+      "initials": "hbl"
+    },
+    {
+      "name": "黄阁坑",
+      "full": "huanggekeng",
+      "initials": "hgk"
+    },
+    {
+      "name": "黄木岗",
+      "full": "huangmugang",
+      "initials": "hmg"
+    },
+    {
+      "name": "黄田",
+      "full": "huangtian",
+      "initials": "ht"
+    },
+    {
+      "name": "回龙埔",
+      "full": "hulongpu",
+      "initials": "hlp"
+    },
+    {
+      "name": "会展城",
+      "full": "huizhancheng",
+      "initials": "hzc"
+    },
+    {
+      "name": "会展中心",
+      "full": "huizhanzhongxin",
+      "initials": "hzzx"
+    },
+    {
+      "name": "机场",
+      "full": "jichang",
+      "initials": "jc"
+    },
+    {
+      "name": "机场北",
+      "full": "jichangbei",
+      "initials": "jcb"
+    },
+    {
+      "name": "机场东",
+      "full": "jichangdong",
+      "initials": "jcd"
+    },
+    {
+      "name": "吉溪",
+      "full": "jixi",
+      "initials": "jx"
+    },
+    {
+      "name": "吉祥",
+      "full": "jixiang",
+      "initials": "jx"
+    },
+    {
+      "name": "技术大学",
+      "full": "jishudaxue",
+      "initials": "jsdx"
+    },
+    {
+      "name": "将围",
+      "full": "jiangwei",
+      "initials": "jw"
+    },
+    {
+      "name": "金源",
+      "full": "jinyuan",
+      "initials": "jy"
+    },
+    {
+      "name": "锦龙",
+      "full": "jinlong",
+      "initials": "jl"
+    },
+    {
+      "name": "景田",
+      "full": "jingtian",
+      "initials": "jt"
+    },
+    {
+      "name": "科学公园",
+      "full": "kexuegongyuan",
+      "initials": "kxgy"
+    },
+    {
+      "name": "科学馆",
+      "full": "kexueguan",
+      "initials": "kxg"
+    },
+    {
+      "name": "科苑",
+      "full": "keyuan",
+      "initials": "ky"
+    },
+    {
+      "name": "坑梓",
+      "full": "kengzi",
+      "initials": "kz"
+    },
+    {
+      "name": "朗下",
+      "full": "langxia",
+      "initials": "lx"
+    },
+    {
+      "name": "老街",
+      "full": "laojie",
+      "initials": "lj"
+    },
+    {
+      "name": "梨园",
+      "full": "liyuan",
+      "initials": "ly"
+    },
+    {
+      "name": "李松蓢",
+      "full": "lisonglang",
+      "initials": "lsl"
+    },
+    {
+      "name": "鲤鱼门",
+      "full": "liyumen",
+      "initials": "lym"
+    },
+    {
+      "name": "荔林",
+      "full": "lilin",
+      "initials": "ll"
+    },
+    {
+      "name": "荔湾",
+      "full": "liwan",
+      "initials": "lw"
+    },
+    {
+      "name": "莲花北",
+      "full": "lianhuabei",
+      "initials": "lhb"
+    },
+    {
+      "name": "莲花村",
+      "full": "lianhuacun",
+      "initials": "lhc"
+    },
+    {
+      "name": "莲花西",
+      "full": "lianhuaxi",
+      "initials": "lhx"
+    },
+    {
+      "name": "莲塘",
+      "full": "liantang",
+      "initials": "lt"
+    },
+    {
+      "name": "莲塘口岸",
+      "full": "liantangkoan",
+      "initials": "ltka"
+    },
+    {
+      "name": "凉帽山",
+      "full": "liangmaoshan",
+      "initials": "lms"
+    },
+    {
+      "name": "临海",
+      "full": "linhai",
+      "initials": "lh"
+    },
+    {
+      "name": "灵芝",
+      "full": "lingzhi",
+      "initials": "lz"
+    },
+    {
+      "name": "流塘",
+      "full": "liutang",
+      "initials": "lt"
+    },
+    {
+      "name": "留仙洞",
+      "full": "liuxiandong",
+      "initials": "lxd"
+    },
+    {
+      "name": "六和",
+      "full": "liuhe",
+      "initials": "lh"
+    },
+    {
+      "name": "六约",
+      "full": "liuyue",
+      "initials": "ly"
+    },
+    {
+      "name": "六约北",
+      "full": "liuyuebei",
+      "initials": "lyb"
+    },
+    {
+      "name": "龙城公园",
+      "full": "longchenggongyuan",
+      "initials": "lcgy"
+    },
+    {
+      "name": "龙城广场",
+      "full": "longchengguangchang",
+      "initials": "lcgc"
+    },
+    {
+      "name": "龙东",
+      "full": "longdong",
+      "initials": "ld"
+    },
+    {
+      "name": "龙华",
+      "full": "longhua",
+      "initials": "lh"
+    },
+    {
+      "name": "龙井",
+      "full": "longjing",
+      "initials": "lj"
+    },
+    {
+      "name": "龙胜",
+      "full": "longsheng",
+      "initials": "ls"
+    },
+    {
+      "name": "龙园",
+      "full": "longyuan",
+      "initials": "ly"
+    },
+    {
+      "name": "楼村",
+      "full": "loucun",
+      "initials": "lc"
+    },
+    {
+      "name": "鹿丹村",
+      "full": "ludancun",
+      "initials": "ldc"
+    },
+    {
+      "name": "罗湖",
+      "full": "luohu",
+      "initials": "lh"
+    },
+    {
+      "name": "罗湖北",
+      "full": "luohubei",
+      "initials": "lhb"
+    },
+    {
+      "name": "罗租",
+      "full": "luozu",
+      "initials": "lz"
+    },
+    {
+      "name": "妈湾",
+      "full": "mawan",
+      "initials": "mw"
+    },
+    {
+      "name": "孖岭",
+      "full": "maling",
+      "initials": "ml"
+    },
+    {
+      "name": "马安山",
+      "full": "maanshan",
+      "initials": "mas"
+    },
+    {
+      "name": "梅村",
+      "full": "meicun",
+      "initials": "mc"
+    },
+    {
+      "name": "梅景",
+      "full": "meijing",
+      "initials": "mj"
+    },
+    {
+      "name": "梅林关",
+      "full": "meilinguan",
+      "initials": "mlg"
+    },
+    {
+      "name": "梦海",
+      "full": "menghai",
+      "initials": "mh"
+    },
+    {
+      "name": "民乐",
+      "full": "minle",
+      "initials": "ml"
+    },
+    {
+      "name": "民治",
+      "full": "minzhi",
+      "initials": "mz"
+    },
+    {
+      "name": "木古",
+      "full": "mugu",
+      "initials": "mg"
+    },
+    {
+      "name": "木棉湾",
+      "full": "mumianwan",
+      "initials": "mmw"
+    },
+    {
+      "name": "南光",
+      "full": "nanguang",
+      "initials": "ng"
+    },
+    {
+      "name": "南坑",
+      "full": "nankeng",
+      "initials": "nk"
+    },
+    {
+      "name": "南联",
+      "full": "nanlian",
+      "initials": "nl"
+    },
+    {
+      "name": "南山",
+      "full": "nanshan",
+      "initials": "ns"
+    },
+    {
+      "name": "南山书城",
+      "full": "nanshanshucheng",
+      "initials": "nssc"
+    },
+    {
+      "name": "南头古城",
+      "full": "nantougucheng",
+      "initials": "ntgc"
+    },
+    {
+      "name": "南油",
+      "full": "nanyou",
+      "initials": "ny"
+    },
+    {
+      "name": "南油西",
+      "full": "nanyouxi",
+      "initials": "nyx"
+    },
+    {
+      "name": "南约",
+      "full": "nanyue",
+      "initials": "ny"
+    },
+    {
+      "name": "泥岗",
+      "full": "nigang",
+      "initials": "ng"
+    },
+    {
+      "name": "牛湖",
+      "full": "niuhu",
+      "initials": "nh"
+    },
+    {
+      "name": "农林",
+      "full": "nonglin",
+      "initials": "nl"
+    },
+    {
+      "name": "平湖",
+      "full": "pinghu",
+      "initials": "ph"
+    },
+    {
+      "name": "平峦山",
+      "full": "pingluanshan",
+      "initials": "pls"
+    },
+    {
+      "name": "坪地六联",
+      "full": "pingdiliulian",
+      "initials": "pdll"
+    },
+    {
+      "name": "坪环",
+      "full": "pinghuan",
+      "initials": "ph"
+    },
+    {
+      "name": "坪山",
+      "full": "pingshan",
+      "initials": "ps"
+    },
+    {
+      "name": "坪山广场",
+      "full": "坪山广场",
+      "initials": "psgc"
+    },
+    {
+      "name": "坪山围",
+      "full": "pingshanwei",
+      "initials": "psw"
+    },
+    {
+      "name": "坪山中心",
+      "full": "pingshanzhongxin",
+      "initials": "pszx"
+    },
+    {
+      "name": "坪西",
+      "full": "pingxi",
+      "initials": "px"
+    },
+    {
+      "name": "坪洲",
+      "full": "pingzhou",
+      "initials": "pz"
+    },
+    {
+      "name": "前海湾",
+      "full": "qianhaiwan",
+      "initials": "qhw"
+    },
+    {
+      "name": "前湾",
+      "full": "qianwan",
+      "initials": "qw"
+    },
+    {
+      "name": "前湾公园",
+      "full": "qianwangongyuan",
+      "initials": "qwgy"
+    },
+    {
+      "name": "茜坑",
+      "full": "xikeng",
+      "initials": "xk"
+    },
+    {
+      "name": "侨城北",
+      "full": "qiaochengbie",
+      "initials": "qcb"
+    },
+    {
+      "name": "侨城东",
+      "full": "qiaochengdong",
+      "initials": "qcd"
+    },
+    {
+      "name": "侨香",
+      "full": "qiaoxiang",
+      "initials": "qx"
+    },
+    {
+      "name": "桥头",
+      "full": "qiaotou",
+      "initials": "qt"
+    },
+    {
+      "name": "桥头西",
+      "full": "qiaotouxi",
+      "initials": "qtx"
+    },
+    {
+      "name": "清湖",
+      "full": "qinghu",
+      "initials": "qh"
+    },
+    {
+      "name": "清湖北",
+      "full": "qinhubei",
+      "initials": "qhb"
+    },
+    {
+      "name": "人才公园",
+      "full": "rencaigongyuan",
+      "initials": "rcgy"
+    },
+    {
+      "name": "人民南",
+      "full": "renminnan",
+      "initials": "rmn"
+    },
+    {
+      "name": "沙蚝",
+      "full": "shahao",
+      "initials": "sh"
+    },
+    {
+      "name": "沙井",
+      "full": "shajing",
+      "initials": "sj"
+    },
+    {
+      "name": "沙井古墟",
+      "full": "shajingguxu",
+      "initials": "sjgx"
+    },
+    {
+      "name": "沙田",
+      "full": "shatian",
+      "initials": "st"
+    },
+    {
+      "name": "沙头角",
+      "full": "shatoujiao",
+      "initials": "stj"
+    },
+    {
+      "name": "沙尾",
+      "full": "shawei",
+      "initials": "sw"
+    },
+    {
+      "name": "沙壆",
+      "full": "shabo",
+      "initials": "sb"
+    },
+    {
+      "name": "晒布",
+      "full": "shaibu",
+      "initials": "sb"
+    },
+    {
+      "name": "上川",
+      "full": "shangchuan",
+      "initials": "sc"
+    },
+    {
+      "name": "上村",
+      "full": "shangcun",
+      "initials": "sc"
+    },
+    {
+      "name": "上芬",
+      "full": "shangfen",
+      "initials": "sf"
+    },
+    {
+      "name": "上李朗",
+      "full": "shanglilang",
+      "initials": "sll"
+    },
+    {
+      "name": "上梅林",
+      "full": "shangmeilin",
+      "initials": "sml"
+    },
+    {
+      "name": "上沙",
+      "full": "shangsha",
+      "initials": "ss"
+    },
+    {
+      "name": "上水径",
+      "full": "shangshuijing",
+      "initials": "ssj"
+    },
+    {
+      "name": "上塘",
+      "full": "shangtang",
+      "initials": "st"
+    },
+    {
+      "name": "上屋",
+      "full": "shangwu",
+      "initials": "sw"
+    },
+    {
+      "name": "尚景",
+      "full": "shangjing",
+      "initials": "sj"
+    },
+    {
+      "name": "少年宫",
+      "full": "shaoniangong",
+      "initials": "sng"
+    },
+    {
+      "name": "蛇口港",
+      "full": "shekougang",
+      "initials": "skg"
+    },
+    {
+      "name": "深大",
+      "full": "shenda",
+      "initials": "sd"
+    },
+    {
+      "name": "深大丽湖",
+      "full": "shendalihu",
+      "initials": "sdlh"
+    },
+    {
+      "name": "深大南",
+      "full": "shendanan",
+      "initials": "sdn"
+    },
+    {
+      "name": "深康",
+      "full": "shenkang",
+      "initials": "sk"
+    },
+    {
+      "name": "深理工",
+      "full": "shenligong",
+      "initials": "slg"
+    },
+    {
+      "name": "深外高中",
+      "full": "shenwaigaozhong",
+      "initials": "swgz"
+    },
+    {
+      "name": "深湾",
+      "full": "shenwan",
+      "initials": "sw"
+    },
+    {
+      "name": "深云",
+      "full": "shenyun",
+      "initials": "sy"
+    },
+    {
+      "name": "深圳北",
+      "full": "shenzhenbei",
+      "initials": "szb"
+    },
+    {
+      "name": "深圳湾公园",
+      "full": "shenzhenwangongyuan",
+      "initials": "szwgy"
+    },
+    {
+      "name": "深圳湾口岸",
+      "full": "shenzhenwankouan",
+      "initials": "szwka"
+    },
+    {
+      "name": "盛平",
+      "full": "shengping",
+      "initials": "sp"
+    },
+    {
+      "name": "石鼓",
+      "full": "shigu",
+      "initials": "sg"
+    },
+    {
+      "name": "石井",
+      "full": "shijing",
+      "initials": "sj"
+    },
+    {
+      "name": "石厦",
+      "full": "shixia",
+      "initials": "sx"
+    },
+    {
+      "name": "石芽岭",
+      "full": "shiyaling",
+      "initials": "syl"
+    },
+    {
+      "name": "石岩",
+      "full": "shiyan",
+      "initials": "sy"
+    },
+    {
+      "name": "世界之窗",
+      "full": "shijiezhichuang",
+      "initials": "sjzc"
+    },
+    {
+      "name": "市民中心",
+      "full": "shiminzhongxin",
+      "initials": "smzx"
+    },
+    {
+      "name": "薯田埔",
+      "full": "shutianpu",
+      "initials": "stp"
+    },
+    {
+      "name": "双龙",
+      "full": "shuanglong",
+      "initials": "sl"
+    },
+    {
+      "name": "双拥街",
+      "full": "shuangyongjie",
+      "initials": "syj"
+    },
+    {
+      "name": "水贝",
+      "full": "shuibei",
+      "initials": "sb"
+    },
+    {
+      "name": "水湾",
+      "full": "shuiwan",
+      "initials": "sw"
+    },
+    {
+      "name": "四海",
+      "full": "sihai",
+      "initials": "sh"
+    },
+    {
+      "name": "四联",
+      "full": "silian",
+      "initials": "sl"
+    },
+    {
+      "name": "松岗",
+      "full": "songgang",
+      "initials": "sg"
+    },
+    {
+      "name": "松岗公园",
+      "full": "songganggongyuan",
+      "initials": "sggy"
+    },
+    {
+      "name": "松元厦",
+      "full": "songyuanxia",
+      "initials": "syx"
+    },
+    {
+      "name": "笋岗",
+      "full": "sungang",
+      "initials": "sg"
+    },
+    {
+      "name": "太安",
+      "full": "taian",
+      "initials": "ta"
+    },
+    {
+      "name": "太子湾",
+      "full": "taiziwan",
+      "initials": "tzw"
+    },
+    {
+      "name": "塘坑",
+      "full": "tangkeng",
+      "initials": "tk"
+    },
+    {
+      "name": "塘朗",
+      "full": "tanglang",
+      "initials": "tl"
+    },
+    {
+      "name": "塘尾",
+      "full": "tangwei",
+      "initials": "tw"
+    },
+    {
+      "name": "桃园",
+      "full": "taoyuan",
+      "initials": "ty"
+    },
+    {
+      "name": "桃源村",
+      "full": "taoyuancun",
+      "initials": "tyc"
+    },
+    {
+      "name": "体育中心",
+      "full": "tiyuzhongxin",
+      "initials": "tyzx"
+    },
+    {
+      "name": "田贝",
+      "full": "tianbei",
+      "initials": "tb"
+    },
+    {
+      "name": "田心",
+      "full": "tianxin",
+      "initials": "tx"
+    },
+    {
+      "name": "铁路公园",
+      "full": "tielugongyuan",
+      "initials": "tlgy"
+    },
+    {
+      "name": "通新岭",
+      "full": "tongxinling",
+      "initials": "txl"
+    },
+    {
+      "name": "同乐南",
+      "full": "tonglenan",
+      "initials": "tln"
+    },
+    {
+      "name": "湾厦",
+      "full": "wanxia",
+      "initials": "wx"
+    },
+    {
+      "name": "文锦",
+      "full": "wenjin",
+      "initials": "wj"
+    },
+    {
+      "name": "梧桐山南",
+      "full": "wutongshannan",
+      "initials": "wtsn"
+    },
+    {
+      "name": "五和",
+      "full": "wuhe",
+      "initials": "wh"
+    },
+    {
+      "name": "西丽",
+      "full": "xili",
+      "initials": "xl"
+    },
+    {
+      "name": "西丽湖",
+      "full": "xilihu",
+      "initials": "xlh"
+    },
+    {
+      "name": "西乡",
+      "full": "xixiang",
+      "initials": "xx"
+    },
+    {
+      "name": "西乡桃源",
+      "full": "xixiangtaoyuan",
+      "initials": "xxty"
+    },
+    {
+      "name": "溪头",
+      "full": "xitou",
+      "initials": "xt"
+    },
+    {
+      "name": "溪涌",
+      "full": "xichong",
+      "initials": "xc"
+    },
+    {
+      "name": "下村",
+      "full": "xiacun",
+      "initials": "xc"
+    },
+    {
+      "name": "下梅林",
+      "full": "xiameilin",
+      "initials": "xml"
+    },
+    {
+      "name": "下沙",
+      "full": "xiasha",
+      "initials": "xs"
+    },
+    {
+      "name": "下水径",
+      "full": "xiashuijing",
+      "initials": "xsj"
+    },
+    {
+      "name": "仙湖路",
+      "full": "xianhulu",
+      "initials": "xhl"
+    },
+    {
+      "name": "香梅",
+      "full": "xiangmei",
+      "initials": "xm"
+    },
+    {
+      "name": "香梅北",
+      "full": "xiangmeibei",
+      "initials": "xmb"
+    },
+    {
+      "name": "香蜜",
+      "full": "xiangmi",
+      "initials": "xm"
+    },
+    {
+      "name": "香蜜湖",
+      "full": "xiangmihu",
+      "initials": "xmh"
+    },
+    {
+      "name": "向西村",
+      "full": "xiangxicun",
+      "initials": "xxc"
+    },
+    {
+      "name": "小梅沙",
+      "full": "xiaomeisha",
+      "initials": "xms"
+    },
+    {
+      "name": "新安",
+      "full": "xinan",
+      "initials": "xa"
+    },
+    {
+      "name": "新安公园",
+      "full": "xinangongyuan",
+      "initials": "xagy"
+    },
+    {
+      "name": "新和",
+      "full": "xinhe",
+      "initials": "xh"
+    },
+    {
+      "name": "新生",
+      "full": "xinsheng",
+      "initials": "xs"
+    },
+    {
+      "name": "新塘围",
+      "full": "xintangwei",
+      "initials": "stw"
+    },
+    {
+      "name": "新秀",
+      "full": "xinxiu",
+      "initials": "xx"
+    },
+    {
+      "name": "新庄",
+      "full": "xinzhuang",
+      "initials": "xz"
+    },
+    {
+      "name": "兴东",
+      "full": "xingdong",
+      "initials": "xd"
+    },
+    {
+      "name": "兴围",
+      "full": "xingwei",
+      "initials": "xw"
+    },
+    {
+      "name": "雪象",
+      "full": "xuexiang",
+      "initials": "xx"
+    },
+    {
+      "name": "雅宝",
+      "full": "yabao",
+      "initials": "yb"
+    },
+    {
+      "name": "盐田港西",
+      "full": "yantiangangxi",
+      "initials": "ytgx"
+    },
+    {
+      "name": "盐田路",
+      "full": "yantianlu",
+      "initials": "ytl"
+    },
+    {
+      "name": "盐田墟",
+      "full": "yantianxu",
+      "initials": "ytx"
+    },
+    {
+      "name": "燕南",
+      "full": "yannan",
+      "initials": "yn"
+    },
+    {
+      "name": "燕子湖",
+      "full": "yanzihu",
+      "initials": "yzh"
+    },
+    {
+      "name": "阳台山东",
+      "full": "yangtaishangdong",
+      "initials": "ytsd"
+    },
+    {
+      "name": "杨美",
+      "full": "yangmei",
+      "initials": "ym"
+    },
+    {
+      "name": "怡海",
+      "full": "yihai",
+      "initials": "yh"
+    },
+    {
+      "name": "怡景",
+      "full": "yijing",
+      "initials": "yj"
+    },
+    {
+      "name": "益田",
+      "full": "yitian",
+      "initials": "yt"
+    },
+    {
+      "name": "银湖",
+      "full": "yinhu",
+      "initials": "yh"
+    },
+    {
+      "name": "应人石",
+      "full": "yingrenshi",
+      "initials": "yrs"
+    },
+    {
+      "name": "永湖",
+      "full": "yonghu",
+      "initials": "yh"
+    },
+    {
+      "name": "愉园",
+      "full": "yuyuan",
+      "initials": "yy"
+    },
+    {
+      "name": "元芬",
+      "full": "yuanfen",
+      "initials": "yf"
+    },
+    {
+      "name": "园岭",
+      "full": "yuanling",
+      "initials": "yl"
+    },
+    {
+      "name": "园山",
+      "full": "yuanshan",
+      "initials": "ys"
+    },
+    {
+      "name": "园山西坑",
+      "full": "yuanshanxikeng",
+      "initials": "ysxk"
+    },
+    {
+      "name": "月亮路",
+      "full": "yuelianglu",
+      "initials": "yll"
+    },
+    {
+      "name": "粤海门",
+      "full": "yuehaimen",
+      "initials": "yhm"
+    },
+    {
+      "name": "长湖",
+      "full": "changhu",
+      "initials": "ch"
+    },
+    {
+      "name": "长岭陂",
+      "full": "changlingpo",
+      "initials": "clp"
+    },
+    {
+      "name": "长龙",
+      "full": "changlong",
+      "initials": "cl"
+    },
+    {
+      "name": "长圳",
+      "full": "changzhen",
+      "initials": "cz"
+    },
+    {
+      "name": "嶂背",
+      "full": "zhangbei",
+      "initials": "zb"
+    },
+    {
+      "name": "圳美",
+      "full": "shenmei",
+      "initials": "sm"
+    },
+    {
+      "name": "中大",
+      "full": "zhongda",
+      "initials": "zd"
+    },
+    {
+      "name": "中山公园",
+      "full": "zhongshangongyuan",
+      "initials": "zsgy"
+    },
+    {
+      "name": "钟屋南",
+      "full": "zhongwunan",
+      "initials": "zwn"
+    },
+    {
+      "name": "珠光",
+      "full": "zhuguang",
+      "initials": "zg"
+    },
+    {
+      "name": "竹村",
+      "full": "zhucun",
+      "initials": "zc"
+    },
+    {
+      "name": "竹子林",
+      "full": "zhuzilin",
+      "initials": "zzl"
+    },
+    {
+      "name": "左炮台东",
+      "full": "zuopaotaidong",
+      "initials": "zptd"
+    }
+  ]
+}
