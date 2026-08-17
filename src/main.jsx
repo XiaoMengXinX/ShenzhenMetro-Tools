@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import { ChevronDown, LocateFixed, Map, Minus, PanelLeftClose, PanelLeftOpen, Plus, Search, X } from 'lucide-react'
 import metroNetwork from './data/metro-network.json'
 import stationSearchIndex from './data/station-search-index.json'
+import { APP_VERSION, STARTUP_LOAD_MODE, setupPwaUpdates } from './pwa-updater.js'
 import './styles.css'
 import './interaction.css'
 
@@ -411,7 +412,7 @@ function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom,
       const selectedStationLine = station.lines.find(line => line.ls === selectedLine)
       const line = selectedStationLine || station.lines[0]
       const muted = selectedLine && !selectedStationLine
-      return <g key={`station-${station.p}`} className={`station-node ${muted ? 'station-muted' : ''}`} onPointerUp={event => onStationPointerUp(event, station, line)} onClick={() => { if (!suppressClick.current) onStationSelect(station, line) }}>
+      return <g key={`station-${station.p}`} className={`station-node ${muted ? 'station-muted' : ''} ${active ? 'is-active' : ''}`} onPointerUp={event => onStationPointerUp(event, station, line)} onClick={() => { if (!suppressClick.current) onStationSelect(station, line) }}>
         <circle className="station-hit-target" cx={x} cy={y} r="25" />
         {interchange ? <rect x={x - 12} y={y - 6} width="24" height="12" rx="6" fill="#fff" stroke={active ? '#172033' : '#697887'} strokeWidth={active ? 4 : 3} /> : <circle cx={x} cy={y} r={active ? 10 : 6.5} fill="#fff" stroke={active ? '#172033' : `#${line.cl}`} strokeWidth={active ? 4 : 2.8} />}
       </g>
@@ -471,6 +472,7 @@ function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom,
 function App() {
   const [lines] = useState(() => metroNetwork.l)
   const [query, setQuery] = useState('')
+  const [showBuildInfo, setShowBuildInfo] = useState(false)
   const [selectedLine, setSelectedLine] = useState(null)
   const [expandedLine, setExpandedLine] = useState(null)
   const [selectedStation, setSelectedStation] = useState(null)
@@ -613,7 +615,7 @@ function App() {
   return <div className="app-shell">
     <main className="workspace">
       <aside className={`sidebar ${sidebarCollapsed ? 'is-collapsed' : ''}`} aria-hidden={sidebarCollapsed}>
-        <div className="sidebar-heading"><div><p className="eyebrow">SHENZHEN METRO</p><h1>线路图</h1></div><button className="filter-button" onClick={clearAll}><Map size={17} /> 总览</button></div>
+        <div className="sidebar-heading"><div><button className="eyebrow eyebrow-toggle" type="button" onClick={() => setShowBuildInfo(value => !value)} title="查看版本和加载方式">{showBuildInfo ? `${APP_VERSION.slice(0, 12)} · ${STARTUP_LOAD_MODE}` : 'SHENZHEN METRO'}</button><h1>线路图</h1></div><button className="filter-button" onClick={clearAll}><Map size={17} /> 总览</button></div>
         <div className="search-area">
           <div className="search-box"><Search size={18} /><input value={query} onChange={e => setQuery(e.target.value)} placeholder="搜索站名、拼音或简拼" />{query && <button onClick={() => setQuery('')} aria-label="清除搜索"><X size={15} /></button>}</div>
           {filteredStations.length > 0 && <div className="search-results">{filteredStations.slice(0, 8).map(item => <button key={`${item.line.ls}-${item.p}`} onClick={() => { selectStationFromList(item, item.line); setQuery('') }}><span className="result-dot" style={{ background: `#${item.line.cl}` }} /><span>{item.n}</span><small>{formatLineNumber(item.line.ln)}</small></button>)}</div>}
@@ -678,6 +680,6 @@ function App() {
 
 createRoot(document.getElementById('root')).render(<App />)
 
-if ('serviceWorker' in navigator && import.meta.env.PROD) {
-  window.addEventListener('load', () => navigator.serviceWorker.register('/sw.js'))
-}
+window.addEventListener('load', () => {
+  setupPwaUpdates().catch(error => console.debug('[PWA] Setup skipped:', error.message))
+})

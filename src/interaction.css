@@ -21,6 +21,20 @@
 .map-viewport.is-panning { cursor: grabbing; }
 .map-viewport.is-one-finger-zoom { cursor: ns-resize; }
 
+.eyebrow-toggle {
+  display: block;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  text-align: left;
+  cursor: default;
+}
+
+.eyebrow-toggle:focus-visible {
+  outline: 1px solid currentColor;
+  outline-offset: 3px;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -348,5 +362,249 @@
     bottom: calc(38px + env(safe-area-inset-bottom));
     left: 10px;
     width: auto;
+  }
+}
+
+/* Keep standalone iOS PWA controls clear of rounded corners and the Home Indicator. */
+@supports (-webkit-touch-callout: none) {
+  @media (display-mode: standalone) and (max-width: 720px) {
+    .map-toolbar {
+      position: fixed;
+      z-index: 7;
+      top: 0;
+      right: 0;
+      left: 0;
+      background: #f7f9fb;
+    }
+
+    .map-canvas {
+      right: max(10px, env(safe-area-inset-right));
+      bottom: max(36px, calc(26px + env(safe-area-inset-bottom)));
+      left: max(10px, env(safe-area-inset-left));
+    }
+
+    .map-note {
+      right: max(16px, env(safe-area-inset-right));
+      bottom: max(16px, calc(7px + env(safe-area-inset-bottom)));
+      left: max(16px, env(safe-area-inset-left));
+    }
+
+    .station-card {
+      right: max(16px, env(safe-area-inset-right));
+      bottom: max(48px, calc(38px + env(safe-area-inset-bottom)));
+      left: max(16px, env(safe-area-inset-left));
+    }
+
+    .sidebar,
+    .sidebar.is-collapsed {
+      padding-right: max(18px, env(safe-area-inset-right));
+      padding-bottom: max(24px, calc(16px + env(safe-area-inset-bottom)));
+      padding-left: max(18px, env(safe-area-inset-left));
+    }
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    color: #e6edf5;
+    background: #0b1119;
+  }
+
+  body,
+  .app-shell,
+  .map-panel {
+    background: #0b1119;
+  }
+
+  .sidebar {
+    background: #101822;
+    border-color: #273345;
+  }
+
+  .map-toolbar {
+    background: #0b1119;
+  }
+
+  .sidebar h1,
+  .map-title h2,
+  .station-card h3 {
+    color: #f4f7fb;
+  }
+
+  .eyebrow,
+  .map-kicker,
+  .card-kicker,
+  .section-label,
+  .station-count,
+  .search-results small,
+  .station-sequence,
+  .map-note,
+  .card-meta,
+  .station-card > div:nth-child(3) > span {
+    color: #8492a5;
+  }
+
+  .filter-button,
+  .map-tools button,
+  .zoom-control,
+  .fare-type-control,
+  .map-mode-control,
+  .sidebar-toggle {
+    color: #aab6c5;
+    background: #151f2b;
+    border-color: #2c394b;
+  }
+
+  .sidebar-toggle {
+    box-shadow: 0 5px 18px rgb(0 0 0 / 32%);
+  }
+
+  .sidebar-toggle:hover {
+    color: #f4f7fb;
+    background: #1b2634;
+  }
+
+  .search-box {
+    color: #7f8da0;
+    background: #131c27;
+    border-color: #2b3748;
+  }
+
+  .search-box:focus-within {
+    border-color: #52657d;
+    box-shadow: 0 0 0 3px rgb(111 137 168 / 14%);
+  }
+
+  .search-box input,
+  .search-results button {
+    color: #dce4ed;
+  }
+
+  .search-results {
+    background: #131c27;
+    border-color: #2b3748;
+    box-shadow: 0 12px 30px rgb(0 0 0 / 38%);
+  }
+
+  .search-results button {
+    background: #131c27;
+  }
+
+  .search-results button:hover,
+  .line-item:hover,
+  .line-item.active,
+  .line-station-item:hover,
+  .line-station-item.active {
+    color: #f2f6fa;
+    background: #1b2634;
+  }
+
+  .line-item,
+  .line-station-item {
+    color: #aab6c5;
+  }
+
+  .line-stations {
+    border-color: #2b3748;
+  }
+
+  .transfer-tag {
+    color: #9ba9ba;
+    background: #243142;
+  }
+
+  .sidebar-footer {
+    background: #131c27;
+  }
+
+  .legend {
+    color: #97a5b6;
+  }
+
+  .legend-dot,
+  .legend-dot.interchange {
+    background: #111a25;
+    border-color: #8290a1;
+  }
+
+  .map-canvas {
+    background: radial-gradient(circle at 48% 42%, #182231 0, #111923 48%, #0d141e 100%);
+    border-color: #273345;
+    box-shadow: 0 10px 35px rgb(0 0 0 / 28%);
+  }
+
+  .line-halo {
+    stroke: #111923;
+  }
+
+  .station-node > rect,
+  .station-node > circle:not(.station-hit-target) {
+    fill: #111923;
+  }
+
+  .station-node.is-active > rect,
+  .station-node.is-active > circle:not(.station-hit-target) {
+    stroke: #f4f7fb;
+  }
+
+  .station-label,
+  .metro-svg.is-fare-mode .station-label {
+    fill: #dce5ef;
+    stroke: rgb(13 20 30 / 96%);
+  }
+
+  .city-labels text {
+    fill: #273243;
+  }
+
+  .fare-marker:not(.is-origin) rect {
+    fill: #151f2b;
+  }
+
+  .fare-marker text {
+    stroke: #151f2b;
+  }
+
+  .fare-marker.metric-fare:not(.is-origin) rect {
+    fill: #e3e8ee;
+  }
+
+  .fare-marker.metric-fare:not(.is-origin) text {
+    stroke: #e3e8ee;
+  }
+
+  .fare-marker.is-origin text {
+    stroke: none;
+  }
+
+  .map-tools .fare-type-control button,
+  .map-tools .map-mode-control button {
+    color: #8f9daf;
+    background: transparent;
+  }
+
+  .map-tools .fare-type-control button.active,
+  .map-tools .map-mode-control button.active {
+    color: #111923;
+    background: #e7edf5;
+  }
+
+  .zoom-control span {
+    color: #9aa8b8;
+  }
+
+  .station-card {
+    background: #151f2b;
+    border-color: #2c394b;
+    box-shadow: 0 12px 30px rgb(0 0 0 / 38%);
+  }
+
+  .card-meta b {
+    color: #c4cfdb;
+  }
+
+  .sidebar-backdrop {
+    background: rgb(0 0 0 / 48%);
   }
 }
