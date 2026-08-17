@@ -470,6 +470,7 @@ function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom,
 }
 
 function App() {
+  const searchInputRef = useRef(null)
   const [lines] = useState(() => metroNetwork.l)
   const [query, setQuery] = useState('')
   const [showBuildInfo, setShowBuildInfo] = useState(false)
@@ -493,6 +494,27 @@ function App() {
     media.addEventListener('change', update)
     return () => media.removeEventListener('change', update)
   }, [])
+  useEffect(() => {
+    const handleEscape = event => {
+      if (event.key !== 'Escape' || event.isComposing || isMobile) return
+
+      const searchIsActive = query || document.activeElement === searchInputRef.current
+      if (searchIsActive) {
+        event.preventDefault()
+        setQuery('')
+        searchInputRef.current?.blur()
+        return
+      }
+
+      if (!sidebarCollapsed) {
+        event.preventDefault()
+        setSidebarCollapsed(true)
+      }
+    }
+
+    window.addEventListener('keydown', handleEscape)
+    return () => window.removeEventListener('keydown', handleEscape)
+  }, [isMobile, query, sidebarCollapsed])
   useEffect(() => {
     fetch(LINE_METRICS_URL)
       .then(response => {
@@ -617,7 +639,7 @@ function App() {
       <aside className={`sidebar ${sidebarCollapsed ? 'is-collapsed' : ''}`} aria-hidden={sidebarCollapsed}>
         <div className="sidebar-heading"><div><button className="eyebrow eyebrow-toggle" type="button" onClick={() => setShowBuildInfo(value => !value)} title="查看版本和加载方式">{showBuildInfo ? `${APP_VERSION.slice(0, 12)} · ${STARTUP_LOAD_MODE}` : 'SHENZHEN METRO'}</button><h1>线路图</h1></div><button className="filter-button" onClick={clearAll}><Map size={17} /> 总览</button></div>
         <div className="search-area">
-          <div className="search-box"><Search size={18} /><input value={query} onChange={e => setQuery(e.target.value)} placeholder="搜索站名、拼音或简拼" />{query && <button onClick={() => setQuery('')} aria-label="清除搜索"><X size={15} /></button>}</div>
+          <div className="search-box"><Search size={18} /><input ref={searchInputRef} value={query} onChange={e => setQuery(e.target.value)} placeholder="搜索站名、拼音或简拼" />{query && <button onClick={() => setQuery('')} aria-label="清除搜索"><X size={15} /></button>}</div>
           {filteredStations.length > 0 && <div className="search-results">{filteredStations.slice(0, 8).map(item => <button key={`${item.line.ls}-${item.p}`} onClick={() => { selectStationFromList(item, item.line); setQuery('') }}><span className="result-dot" style={{ background: `#${item.line.cl}` }} /><span>{item.n}</span><small>{formatLineNumber(item.line.ln)}</small></button>)}</div>}
         </div>
         <div className="section-label"><span>线路列表</span><span>{lines.length} 条线路</span></div>
