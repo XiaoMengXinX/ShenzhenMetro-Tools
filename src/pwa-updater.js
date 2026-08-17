@@ -46,10 +46,23 @@ const checkForUpdate = async registration => {
   }
 }
 
+const scheduleWhenIdle = callback => {
+  const runWhenIdle = () => {
+    if ('requestIdleCallback' in globalThis) {
+      globalThis.requestIdleCallback(callback, { timeout: 5000 })
+    } else {
+      setTimeout(callback, 2500)
+    }
+  }
+  globalThis.requestAnimationFrame(() => globalThis.requestAnimationFrame(runWhenIdle))
+}
+
 export const setupPwaUpdates = async () => {
   if (!('serviceWorker' in navigator) || !import.meta.env.PROD) return
 
   const registration = await navigator.serviceWorker.register('/sw.js')
-  await navigator.serviceWorker.ready
-  setTimeout(() => checkForUpdate(registration), 1500)
+  scheduleWhenIdle(async () => {
+    await navigator.serviceWorker.ready
+    await checkForUpdate(registration)
+  })
 }
