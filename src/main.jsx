@@ -1,9 +1,8 @@
-import React, { useEffect, useMemo, useRef, useState } from 'react'
-import { createRoot } from 'react-dom/client'
+import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ChevronDown, LocateFixed, Map, Minus, PanelLeftClose, PanelLeftOpen, Plus, Search, X } from 'lucide-react'
 import metroNetwork from './data/metro-network.json'
 import stationSearchIndex from './data/station-search-index.json'
-import { APP_VERSION, STARTUP_LOAD_MODE, setupPwaUpdates } from './pwa-updater.js'
+import { APP_VERSION, STARTUP_LOAD_MODE } from './pwa-updater.js'
 import './styles.css'
 import './interaction.css'
 
@@ -134,6 +133,66 @@ const OFFICIAL_LINE_LABEL_POSITIONS = {
   '200000024050': [[730, 190], [730, 1580]]
 }
 
+const MapArtwork = React.memo(function MapArtwork({ displayLinePaths, stationGroups, labels, selectedLine, selectedStation, metricOverlay, onStationPointerUp, onStationClick }) {
+  return <>
+    {displayLinePaths.map(line => <polyline key={`halo-${line.ls}`} className={`line-halo ${selectedLine && selectedLine !== line.ls ? 'line-muted' : ''}`} points={line.pointString} fill="none" stroke="#fff" strokeWidth="17" strokeLinejoin="round" strokeLinecap="round" />)}
+    {displayLinePaths.map(line => {
+      const muted = selectedLine && selectedLine !== line.ls
+      return <polyline key={line.ls} className={`line-route ${muted ? 'line-muted' : ''}`} points={line.pointString} fill="none" stroke={muted ? '#aeb5bf' : `#${line.cl}`} strokeWidth="9" strokeLinejoin="round" strokeLinecap="round" />
+    })}
+    {stationGroups.map(station => {
+      const [x, y] = station.p.split(' ').map(Number)
+      const active = selectedStation?.sid === station.sid
+      const interchange = station.lines.length > 1
+      const selectedStationLine = station.lines.find(line => line.ls === selectedLine)
+      const line = selectedStationLine || station.lines[0]
+      const muted = selectedLine && !selectedStationLine
+      return <g key={`station-${station.p}`} className={`station-node ${muted ? 'station-muted' : ''} ${active ? 'is-active' : ''}`} onPointerUp={event => onStationPointerUp(event, station, line)} onClick={() => onStationClick(station, line)}>
+        <circle className="station-hit-target" cx={x} cy={y} r="25" />
+        {interchange ? <rect x={x - 12} y={y - 6} width="24" height="12" rx="6" fill="#fff" stroke={active ? '#172033' : '#697887'} strokeWidth={active ? 4 : 3} /> : <circle cx={x} cy={y} r={active ? 10 : 6.5} fill="#fff" stroke={active ? '#172033' : `#${line.cl}`} strokeWidth={active ? 4 : 2.8} />}
+      </g>
+    })}
+    {metricOverlay && stationGroups.map(station => {
+      const [x, y] = station.p.split(' ').map(Number)
+      const isOrigin = selectedStation?.p === station.p
+      const rawValue = metricOverlay.values.get(normalizeStationName(station.n))
+      if (!isOrigin && rawValue === undefined) return null
+      const color = isOrigin ? '#16a34a' : `#${station.lines[0].cl}`
+      const value = isOrigin ? '起' : formatMetricValue(rawValue, metricOverlay.mode)
+      const width = isOrigin ? 25 : Math.max(25, 10 + value.length * 8)
+      return <g key={`metric-${station.p}`} className={`fare-marker metric-${metricOverlay.mode} ${isOrigin ? 'is-origin' : ''}`} transform={`translate(${x} ${y})`}>
+        <rect x={-width / 2} y="-9" width={width} height="18" rx="3" fill={isOrigin ? color : '#fff'} stroke={color} strokeWidth="1.5" />
+        <text x="0" y="4.5" textAnchor="middle" fill={isOrigin ? '#fff' : color}>{value}</text>
+      </g>
+    })}
+    {labels.map(({ station, x, y, anchor }) => {
+      const direction = station.n === '银湖' ? 3 : Number(station.lg)
+      const fareNudge = metricOverlay ? {
+        0: [0, -2], 1: [2, -1], 2: [2, 0], 3: [2, 1],
+        4: [0, 2], 5: [-2, 1], 6: [-2, 0], 7: [-2, -1]
+      }[direction] || [0, 0] : [0, 0]
+      return <g key={`label-${station.p}`} className="station-label-group" onPointerUp={event => onStationPointerUp(event, station, station.lines[0])} onClick={() => onStationClick(station, station.lines[0])}>
+        <text x={x + fareNudge[0]} y={y + fareNudge[1]} textAnchor={anchor} className="station-label">{station.n}</text>
+      </g>
+    })}
+    {!metricOverlay && displayLinePaths.flatMap(line => {
+      const positions = OFFICIAL_LINE_LABEL_POSITIONS[line.ls]
+        || line.lp.map(point => {
+          const [x, y] = point.split(' ').map(Number)
+          return [x + LEGACY_MAP_OFFSET.x, y + LEGACY_MAP_OFFSET.y - 15]
+        })
+      const branch = line.ln.includes('支')
+      const number = line.ln.replace('支', '')
+      return positions.map(([legacyX, legacyY], index) => <g key={`line-label-${line.ls}-${index}`} className={`map-line-label ${selectedLine && selectedLine !== line.ls ? 'line-label-muted' : ''}`} transform={`translate(${legacyX - LEGACY_MAP_OFFSET.x} ${legacyY - LEGACY_MAP_OFFSET.y})`}>
+        <rect width="65" height="30" rx="3" fill={selectedLine && selectedLine !== line.ls ? '#8f98a3' : `#${line.cl}`} />
+        <text x="18" y="24" textAnchor="middle" className="map-line-label-number">{number}</text>
+        <text x="48" y="15" textAnchor="middle" className="map-line-label-cn">{branch ? '支线' : '号线'}</text>
+        <text x="48" y="25" textAnchor="middle" className="map-line-label-en">Line {number}</text>
+      </g>)
+    })}
+  </>
+})
+
 function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom, minZoom, maxZoom, pan, onZoomChange, onPanChange, metricOverlay }) {
   const BASE = MAP_VIEWBOX
   const viewportRef = useRef(null)
@@ -144,7 +203,7 @@ function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom,
     const update = () => setViewportSize({ width: element.clientWidth || 1, height: element.clientHeight || 1 })
     const preventNativeTouch = (event) => {
       if (event.cancelable) event.preventDefault()
-      globalThis.getSelection?.()?.removeAllRanges()
+      if (event.type === 'touchstart') globalThis.getSelection?.()?.removeAllRanges()
     }
     update()
     const observer = new ResizeObserver(update)
@@ -225,6 +284,27 @@ function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom,
   const doubleTapZoom = useRef(null)
   const suppressClick = useRef(false)
   const touchStationActivated = useRef(false)
+  const animationFrame = useRef(null)
+  const pendingView = useRef(null)
+  const viewState = useRef({ zoom, pan })
+  const onStationSelectRef = useRef(onStationSelect)
+  viewState.current = { zoom, pan }
+  onStationSelectRef.current = onStationSelect
+  useEffect(() => () => {
+    if (animationFrame.current !== null) cancelAnimationFrame(animationFrame.current)
+  }, [])
+  const scheduleViewChange = (nextPan, nextZoom) => {
+    viewState.current = { pan: nextPan, zoom: nextZoom }
+    pendingView.current = viewState.current
+    if (animationFrame.current !== null) return
+    animationFrame.current = requestAnimationFrame(() => {
+      const nextView = pendingView.current
+      animationFrame.current = null
+      if (!nextView) return
+      onPanChange(nextView.pan)
+      onZoomChange(nextView.zoom)
+    })
+  }
   const clientToSvg = (clientX, clientY) => {
     const rect = viewportRef.current.getBoundingClientRect()
     const screenScale = Math.min(rect.width / BASE.w, rect.height / BASE.h)
@@ -300,7 +380,6 @@ function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom,
   }
   const onPointerMove = (event) => {
     if (!activePointers.current.has(event.pointerId)) return
-    if (event.pointerType !== 'mouse') globalThis.getSelection?.()?.removeAllRanges()
     activePointers.current.set(event.pointerId, { x: event.clientX, y: event.clientY })
 
     if (pinch.current && activePointers.current.size === 2) {
@@ -310,8 +389,7 @@ function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom,
       const midpoint = { x: (first.x + second.x) / 2, y: (first.y + second.y) / 2 }
       const nextZoom = Math.min(maxZoom, Math.max(minZoom, pinch.current.startZoom * distance / pinch.current.startDistance))
       const cursor = clientToSvg(midpoint.x, midpoint.y)
-      onPanChange(panForWorldPoint(cursor, nextZoom, pinch.current.worldPoint))
-      onZoomChange(nextZoom)
+      scheduleViewChange(panForWorldPoint(cursor, nextZoom, pinch.current.worldPoint), nextZoom)
       return
     }
 
@@ -322,8 +400,7 @@ function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom,
       if (Math.abs(verticalDistance) < 2) return
       gesture.moved = true
       const nextZoom = Math.min(maxZoom, Math.max(minZoom, gesture.startZoom * Math.exp(verticalDistance / 180)))
-      onPanChange(panForWorldPoint(gesture.cursor, nextZoom, gesture.worldPoint))
-      onZoomChange(nextZoom)
+      scheduleViewChange(panForWorldPoint(gesture.cursor, nextZoom, gesture.worldPoint), nextZoom)
       return
     }
 
@@ -340,7 +417,7 @@ function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom,
     const scale = Math.min(viewportSize.width / BASE.w, viewportSize.height / BASE.h)
     const dx = screenDx / scale
     const dy = screenDy / scale
-    onPanChange({ x: p.startX + dx, y: p.startY + dy })
+    scheduleViewChange({ x: p.startX + dx, y: p.startY + dy }, viewState.current.zoom)
   }
   const onPointerUp = (event) => {
     if (event.pointerType !== 'mouse') globalThis.getSelection?.()?.removeAllRanges()
@@ -380,90 +457,29 @@ function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom,
   }
   const onWheel = (event) => {
     event.preventDefault()
-    const oldZoom = zoom
+    const { zoom: oldZoom, pan: currentPan } = viewState.current
     const nextZoom = Math.min(maxZoom, Math.max(minZoom, oldZoom * (event.deltaY > 0 ? .9 : 1.1)))
     if (nextZoom === oldZoom) return
 
     const cursor = clientToSvg(event.clientX, event.clientY)
-    const worldPoint = worldPointAt(cursor, oldZoom, pan)
-    onPanChange(panForWorldPoint(cursor, nextZoom, worldPoint))
-    onZoomChange(nextZoom)
+    const worldPoint = worldPointAt(cursor, oldZoom, currentPan)
+    scheduleViewChange(panForWorldPoint(cursor, nextZoom, worldPoint), nextZoom)
   }
-  const onStationPointerUp = (event, station, line) => {
+  const onStationPointerUp = useCallback((event, station, line) => {
     if (event.pointerType === 'mouse') return
     const activePointer = pointer.current
     if (!activePointer || activePointer.id !== event.pointerId || activePointer.moved || pinch.current || doubleTapZoom.current) return
     touchStationActivated.current = true
-    onStationSelect(station, line)
-  }
+    onStationSelectRef.current(station, line)
+  }, [])
+  const onStationClick = useCallback((station, line) => {
+    if (!suppressClick.current) onStationSelectRef.current(station, line)
+  }, [])
   const svgTransform = `translate(${pan.x} ${pan.y}) translate(${BASE.x * (1 - zoom)} ${BASE.y * (1 - zoom)}) scale(${zoom})`
   return <div ref={viewportRef} className="map-viewport" onPointerDown={onPointerDown} onPointerMove={onPointerMove} onPointerUp={onPointerUp} onPointerCancel={onPointerUp} onWheel={onWheel} onContextMenu={event => event.preventDefault()} onDragStart={event => event.preventDefault()}>
   <svg className={`metro-svg ${metricOverlay ? 'is-fare-mode' : ''}`} viewBox={`${BASE.x} ${BASE.y} ${BASE.w} ${BASE.h}`} preserveAspectRatio="xMidYMid meet" aria-label="深圳地铁线路图">
     <g transform={svgTransform}>
-    {displayLinePaths.map(line => <polyline key={`halo-${line.ls}`} className={`line-halo ${selectedLine && selectedLine !== line.ls ? 'line-muted' : ''}`} points={line.pointString} fill="none" stroke="#fff" strokeWidth="17" strokeLinejoin="round" strokeLinecap="round" />)}
-    {displayLinePaths.map(line => {
-      const muted = selectedLine && selectedLine !== line.ls
-      return <polyline key={line.ls} className={`line-route ${muted ? 'line-muted' : ''}`} points={line.pointString} fill="none" stroke={muted ? '#aeb5bf' : `#${line.cl}`} strokeWidth="9" strokeLinejoin="round" strokeLinecap="round" />
-    })}
-    {stationGroups.map(station => {
-      const [x, y] = station.p.split(' ').map(Number)
-      const active = selectedStation?.sid === station.sid
-      const interchange = station.lines.length > 1
-      const selectedStationLine = station.lines.find(line => line.ls === selectedLine)
-      const line = selectedStationLine || station.lines[0]
-      const muted = selectedLine && !selectedStationLine
-      return <g key={`station-${station.p}`} className={`station-node ${muted ? 'station-muted' : ''} ${active ? 'is-active' : ''}`} onPointerUp={event => onStationPointerUp(event, station, line)} onClick={() => { if (!suppressClick.current) onStationSelect(station, line) }}>
-        <circle className="station-hit-target" cx={x} cy={y} r="25" />
-        {interchange ? <rect x={x - 12} y={y - 6} width="24" height="12" rx="6" fill="#fff" stroke={active ? '#172033' : '#697887'} strokeWidth={active ? 4 : 3} /> : <circle cx={x} cy={y} r={active ? 10 : 6.5} fill="#fff" stroke={active ? '#172033' : `#${line.cl}`} strokeWidth={active ? 4 : 2.8} />}
-      </g>
-    })}
-    {metricOverlay && stationGroups.map(station => {
-      const [x, y] = station.p.split(' ').map(Number)
-      const isOrigin = selectedStation?.p === station.p
-      const rawValue = metricOverlay.values.get(normalizeStationName(station.n))
-      if (!isOrigin && rawValue === undefined) return null
-      const color = isOrigin ? '#16a34a' : `#${station.lines[0].cl}`
-      const value = isOrigin ? '起' : formatMetricValue(rawValue, metricOverlay.mode)
-      const width = isOrigin ? 25 : Math.max(25, 10 + value.length * 8)
-      return <g key={`metric-${station.p}`} className={`fare-marker metric-${metricOverlay.mode} ${isOrigin ? 'is-origin' : ''}`} transform={`translate(${x} ${y})`}>
-        <rect x={-width / 2} y="-9" width={width} height="18" rx="3" fill={isOrigin ? color : '#fff'} stroke={color} strokeWidth="1.5" />
-        <text x="0" y="4.5" textAnchor="middle" fill={isOrigin ? '#fff' : color}>{value}</text>
-      </g>
-    })}
-    {labels.map(({ station, x, y, anchor }) => {
-      const direction = station.n === '银湖' ? 3 : Number(station.lg)
-      const fareNudge = metricOverlay ? {
-        0: [0, -2], 1: [2, -1], 2: [2, 0], 3: [2, 1],
-        4: [0, 2], 5: [-2, 1], 6: [-2, 0], 7: [-2, -1]
-      }[direction] || [0, 0] : [0, 0]
-      return <g
-        key={`label-${station.p}`}
-        className="station-label-group"
-        onPointerUp={event => onStationPointerUp(event, station, station.lines[0])}
-        onClick={() => { if (!suppressClick.current) onStationSelect(station, station.lines[0]) }}
-      >
-        <text x={x + fareNudge[0]} y={y + fareNudge[1]} textAnchor={anchor} className="station-label">{station.n}</text>
-      </g>
-    })}
-    {!metricOverlay && displayLinePaths.flatMap(line => {
-      const positions = OFFICIAL_LINE_LABEL_POSITIONS[line.ls]
-        || line.lp.map(point => {
-          const [x, y] = point.split(' ').map(Number)
-          return [x + LEGACY_MAP_OFFSET.x, y + LEGACY_MAP_OFFSET.y - 15]
-        })
-      const branch = line.ln.includes('支')
-      const number = line.ln.replace('支', '')
-      return positions.map(([legacyX, legacyY], index) => <g
-        key={`line-label-${line.ls}-${index}`}
-        className={`map-line-label ${selectedLine && selectedLine !== line.ls ? 'line-label-muted' : ''}`}
-        transform={`translate(${legacyX - LEGACY_MAP_OFFSET.x} ${legacyY - LEGACY_MAP_OFFSET.y})`}
-      >
-        <rect width="65" height="30" rx="3" fill={selectedLine && selectedLine !== line.ls ? '#8f98a3' : `#${line.cl}`} />
-        <text x="18" y="24" textAnchor="middle" className="map-line-label-number">{number}</text>
-        <text x="48" y="15" textAnchor="middle" className="map-line-label-cn">{branch ? '支线' : '号线'}</text>
-        <text x="48" y="25" textAnchor="middle" className="map-line-label-en">Line {number}</text>
-      </g>)
-    })}
+      <MapArtwork displayLinePaths={displayLinePaths} stationGroups={stationGroups} labels={labels} selectedLine={selectedLine} selectedStation={selectedStation} metricOverlay={metricOverlay} onStationPointerUp={onStationPointerUp} onStationClick={onStationClick} />
     </g>
   </svg>
   </div>
@@ -592,11 +608,11 @@ function App() {
     if (!selectedStation || !metricGraph) return null
     return shortestPaths(metricGraph, normalizeStationName(selectedStation.n))
   }, [selectedStation, metricGraph])
-  const metricOverlay = fareValues
+  const metricOverlay = useMemo(() => fareValues
     ? { mode: 'fare', values: fareValues }
     : travelValues
       ? { mode: mapMode, values: travelValues }
-      : null
+      : null, [fareValues, travelValues, mapMode])
   const modeLabel = mapMode === 'duration' ? '含换乘的最短时长' : mapMode === 'distance' ? '最短里程' : fareModeLabel
   const modeUnit = mapMode === 'duration' ? '分钟' : mapMode === 'distance' ? '公里' : '元'
 
@@ -700,8 +716,4 @@ function App() {
   </div>
 }
 
-createRoot(document.getElementById('root')).render(<App />)
-
-window.addEventListener('load', () => {
-  setupPwaUpdates().catch(error => console.debug('[PWA] Setup skipped:', error.message))
-})
+export default App
