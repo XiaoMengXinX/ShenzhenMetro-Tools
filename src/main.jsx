@@ -340,13 +340,18 @@ function MetroMap({ lines, selectedLine, selectedStation, onStationSelect, zoom,
         && Date.now() - previousTap.time < 320
         && Math.hypot(event.clientX - previousTap.x, event.clientY - previousTap.y) < 32
       if (isDoubleTap) {
-        const cursor = clientToSvg(event.clientX, event.clientY)
+        const viewportRect = viewportRef.current.getBoundingClientRect()
+        const cursor = clientToSvg(
+          viewportRect.left + viewportRect.width / 2,
+          viewportRect.top + viewportRect.height / 2
+        )
+        const { zoom: currentZoom, pan: currentPan } = viewState.current
         doubleTapZoom.current = {
           id: event.pointerId,
           startY: event.clientY,
-          startZoom: zoom,
+          startZoom: currentZoom,
           cursor,
-          worldPoint: worldPointAt(cursor, zoom, pan),
+          worldPoint: worldPointAt(cursor, currentZoom, currentPan),
           moved: false
         }
         lastTap.current = null
